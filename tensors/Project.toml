@@ -1,0 +1,30 @@
+[deps]
+AbstractTrees = "1520ce14-60c1-5f80-bbc7-55ef81b5835c"
+CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+CliqueTrees = "60701a23-6482-424a-84db-faee86b9b1f8"
+CondaPkg = "992eb4ea-22a4-4c89-a5bb-47a3300528ab"
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+EinExprs = "b1794770-133b-4de1-afb4-526377e9f4c5"
+KaHyPar = "2a6221f6-aa48-11e9-3542-2d9e0ef01880"
+Metis = "2679e427-3c69-5b7f-982b-ece356f1e94b"
+OMEinsum = "ebe7aa44-baf0-506c-a96f-8464559b3922"
+OMEinsumContractionOrders = "6f22d1fd-8eed-4bb7-9776-e7d684900715"
+PythonCall = "6099a3de-0909-46bc-b1f4-468b9a2dfc0d"
+Yao = "5872b779-8223-5990-8dd0-5abbb0748c8c"
+
+[sources]
+EinExprs = {path = "../../EinExprs.jl"}
+
+[compat]
+AbstractTrees = "0.4.5"
+CairoMakie = "0.14.0"
+CliqueTrees = "1.7.1"
+CondaPkg = "0.2.29"
+DataFrames = "1.7.0"
+EinExprs = "0.6.10"
+KaHyPar = "0.3.1"
+Metis = "1.5.0"
+OMEinsum = "0.8.8"
+OMEinsumContractionOrders = "0.9.9"
+PythonCall = "0.9.25"
+Yao = "0.9.1"
