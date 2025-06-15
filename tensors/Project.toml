@@ -1,5 +1,6 @@
 [deps]
 AbstractTrees = "1520ce14-60c1-5f80-bbc7-55ef81b5835c"
+CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
 CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
 CliqueTrees = "60701a23-6482-424a-84db-faee86b9b1f8"
 CondaPkg = "992eb4ea-22a4-4c89-a5bb-47a3300528ab"
