@@ -60,7 +60,7 @@ function run()
         "running time",
     )
 
-    for file in readdir("circuits")[1:3]
+    for file in readdir("circuits")
         if endswith(file, ".txt")
             path = joinpath(@__DIR__, "circuits", file)
             circuit = yaocircuit_from_qasm(path)
