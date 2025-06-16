@@ -150,7 +150,6 @@ function timecomplexity(network::SizedEinExpr{L}) where {L}
     hypergraph = SparseMatrixCSC(m, n, colptr, rowval, nzval)
     hypergraph = copy(transpose(hypergraph))
     dualgraph = hypergraph' * hypergraph
-    dualgraph = hypergraph' * hypergraph
     return treewidth(weights, dualgraph; alg=m:-1:1)
 end
 
