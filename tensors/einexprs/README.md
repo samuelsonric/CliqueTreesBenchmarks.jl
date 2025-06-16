@@ -10,7 +10,7 @@ julia --project make.jl
 
 ![](raw.png)
 
-## Performance Profies
+## Performance Profiles
 
 ![](profile.png)
 
