@@ -8,7 +8,7 @@ using PythonCall
 using SparseArrays
 using Yao
 
-using OMEinsum: get_size_dict, LeafString
+using OMEinsum: getixsv, get_size_dict, LeafString
 using Yao: TensorNetwork
 
 export make, solve, timecomplexity, spacecomplexity
@@ -208,6 +208,31 @@ end
 
 function timecomplexity(network)
     return treewidth(decomposition(network)...)
+end
+
+function spacecomplexity(network::TensorNetwork)
+    tree = network.code
+    size = get_size_dict(getixsv(tree), network.tensors)
+    maxwidth = 0.0
+
+    for node in PreOrderDFS(tree)
+        width = 0.0
+
+        if !isa(node, LeafString)
+            for label in node.eins.iy
+                width += log2(size[label])
+            end
+        else
+            for string in eachsplit(node.str, "∘")
+                label = parse(Int, string)
+                width += log2(size[label])
+            end
+        end
+
+        maxwidth = max(width, maxwidth)
+    end
+
+    return maxwidth
 end
 
 function spacecomplexity(network::SizedEinExpr)

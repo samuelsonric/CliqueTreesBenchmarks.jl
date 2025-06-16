@@ -1,11 +1,12 @@
-include("TensorBenchmarks.jl")
-include("YaoQASMReader.jl")
+include("../TensorBenchmarks.jl")
+include("../YaoQASMReader.jl")
 
 using CairoMakie
 using CliqueTrees
 using DataFrames
 using PythonCall
-using EinExprs
+using OMEinsumContractionOrders
+using Yao
 
 import CSV
 import KaHyPar
@@ -18,14 +19,14 @@ const CTG = pyimport("cotengra")
 
 const LABELS = (
     "CoTenGra",
-    "EinExprs (KaHyPar)",
-    "EinExprs (METIS)",
+    "OMEinsum (KaHyPar)",
+    "OMEinsum (METIS)",
 )
 
 const PAIRS = (
     (Py,            () -> CTG.HyperOptimizer()),
-    (SizedEinExpr,  () -> HyPar(KaHyParND(); imbalances = 100:10:800)),
-    (SizedEinExpr,  () -> HyPar(METISND();   imbalances = 100:10:800)),
+    (TensorNetwork,  () -> HyperND(KaHyParND(); imbalances = 100:10:800)),
+    (TensorNetwork,  () -> HyperND(METISND();   imbalances = 100:10:800)),
 )
 
 function printrow(circuit, algorithm, tc, sc, time)
@@ -111,9 +112,11 @@ function run()
         "running time",
     )
 
-    for file in readdir("circuits")
+    dir = joinpath("..", "circuits")
+
+    for file in readdir(dir)
         if endswith(file, ".txt")
-            path = joinpath(@__DIR__, "circuits", file)
+            path = joinpath(@__DIR__, dir, file)
             circuit = yaocircuit_from_qasm(path)
                     
             for (label, (T, f)) in zip(LABELS, PAIRS)
