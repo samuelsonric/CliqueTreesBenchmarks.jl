@@ -85,12 +85,12 @@ function make(::Type{Tuple{DynamicEinCode, Dict}}, query, matrix, weights)
 end
 
 function make(::Type{SizedEinExpr}, query, matrix, weights)
-    path = EinCode(Int[]); size_dict = Dict{Int, Int}()
+    path = EinExpr(Int[]); size_dict = Dict{Int, Int}()
 
     for j in axes(matrix, 2)
         pstart = matrix.colptr[j]
         pstop = matrix.colptr[j + 1] - 1
-        arg = EinCode(Int[])
+        arg = EinExpr(Int[])
 
         for p in pstart:pstop
             i = matrix.rowval[p]
