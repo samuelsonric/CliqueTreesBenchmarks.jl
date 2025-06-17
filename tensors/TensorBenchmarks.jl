@@ -15,7 +15,73 @@ using .YaoQASMReader
 using OMEinsum: get_size_dict, LeafString
 using Yao: TensorNetwork
 
-export read, make, solve, timecomplexity, spacecomplexity
+export printrow, profile, read, make, solve, timecomplexity, spacecomplexity
+
+function printrow(circuit, algorithm, tc, sc, time)
+    print(" | ")
+    print(rpad(circuit, 30))
+    print(" | ")
+    print(rpad(algorithm, 20))
+    print(" | ")
+    print(rpad(tc, 20))
+    print(" | ")
+    print(rpad(sc, 20))
+    print(" | ")
+    print(rpad(time, 20))
+    print(" | ")
+    println()
+    return
+end
+
+function profile(matrix::Matrix{Float64})
+    np, ns = size(matrix); npp = np + 1
+
+    ratios = Matrix{Float64}(undef, npp, ns)
+    xplots = Vector{Vector{Float64}}(undef, ns)
+    yplots = Vector{Vector{Float64}}(undef, ns)
+
+    minima = mapslices(minimum, matrix; dims = 2)
+    maxratio = 0.0
+
+    for p in 1:np, s in 1:ns
+        ratio = matrix[p, s] / minima[p]
+        ratios[p, s] = ratio
+        maxratio = max(ratio, maxratio)
+    end
+
+    for s in 1:ns
+        ratios[npp, s] = 2.0 * maxratio
+    end
+
+    sort!(ratios; dims = 1)
+
+    for s in 1:ns
+        column = ratios[:, s]; ratio = minimum(column)
+
+        xplot = Float64[]
+        yplot = Float64[]
+
+        while ratio < maximum(column)
+            index = findlast(column .<= ratio)
+
+            ratio = max(
+                column[index],
+                column[index + 1],
+            )
+
+            push!(xplot, column[index])
+            push!(yplot, index / np)
+        end
+
+        push!(xplot, column[npp])
+        push!(yplot, npp / np)
+
+        xplots[s] = xplot
+        yplots[s] = yplot
+    end
+
+    return xplots, yplots
+end
 
 function read(file::String)
     circuit = yaocircuit_from_qasm(file)

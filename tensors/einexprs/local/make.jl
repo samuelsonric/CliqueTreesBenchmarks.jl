@@ -1,12 +1,11 @@
-include("../TensorBenchmarks.jl")
+include("../../TensorBenchmarks.jl")
 
 using CairoMakie
 using CliqueTrees
 using DataFrames
+using EinExprs
 using PythonCall
-using OMEinsum
-using OMEinsumContractionOrders
-using Yao
+using Random
 
 import CSV
 import KaHyPar
@@ -18,81 +17,15 @@ const CTG = pyimport("cotengra")
 
 const LABELS = (
     "CoTenGra",
-    "OMEinsum (KaHyPar)",
-    "OMEinsum (METIS)",
+    "EinExprs (Greedy)",
+    "EinExprs (MF)",
 )
 
 const PAIRS = (
-    (Tuple{Py, Py, Py},           () -> CTG.HyperOptimizer()),
-    (Tuple{DynamicEinCode, Dict}, () -> HyperND(KaHyParND(); imbalances = 100:10:800)),
-    (Tuple{DynamicEinCode, Dict}, () -> HyperND(METISND();   imbalances = 100:10:800)),
+    (Tuple{Py, Py, Py}, () -> CTG.GreedyOptimizer()),
+    (SizedEinExpr,      () -> Greedy()),
+    (SizedEinExpr,      () -> LineGraph(MF())),
 )
-
-function printrow(circuit, algorithm, tc, sc, time)
-    print(" | ")
-    print(rpad(circuit, 30))
-    print(" | ")
-    print(rpad(algorithm, 20))
-    print(" | ")
-    print(rpad(tc, 20))
-    print(" | ")
-    print(rpad(sc, 20))
-    print(" | ")
-    print(rpad(time, 20))
-    print(" | ")
-    println()
-    return
-end
-
-function profile(matrix::Matrix{Float64})
-    np, ns = size(matrix); npp = np + 1
-
-    ratios = Matrix{Float64}(undef, npp, ns)
-    xplots = Vector{Vector{Float64}}(undef, ns)
-    yplots = Vector{Vector{Float64}}(undef, ns)
-
-    minima = mapslices(minimum, matrix; dims = 2)
-    maxratio = 0.0
-
-    for p in 1:np, s in 1:ns
-        ratio = matrix[p, s] / minima[p]
-        ratios[p, s] = ratio
-        maxratio = max(ratio, maxratio)
-    end
-
-    for s in 1:ns
-        ratios[npp, s] = 2.0 * maxratio
-    end
-
-    sort!(ratios; dims = 1)
-
-    for s in 1:ns
-        column = ratios[:, s]; ratio = minimum(column)
-
-        xplot = Float64[]
-        yplot = Float64[]
-
-        while ratio < maximum(column)
-            index = findlast(column .<= ratio)
-
-            ratio = max(
-                column[index],
-                column[index + 1],
-            )
-
-            push!(xplot, column[index])
-            push!(yplot, index / np)
-        end
-
-        push!(xplot, column[npp])
-        push!(yplot, npp / np)
-
-        xplots[s] = xplot
-        yplots[s] = yplot
-    end
-
-    return xplots, yplots
-end
 
 function run()
     dataframe = DataFrame(
@@ -111,7 +44,7 @@ function run()
         "running time",
     )
 
-    dir = joinpath("..", "circuits")
+    dir = joinpath("..", "..", "circuits")
 
     for file in readdir(dir)
         if endswith(file, ".txt")
@@ -119,28 +52,40 @@ function run()
             query, matrix, weights = TensorBenchmarks.read(path)
                     
             for (label, (T, f)) in zip(LABELS, PAIRS)
-                network = make(T, query, matrix, weights)
-                
-                optimizer = f()
-                result = solve(network, optimizer)
-                tc = timecomplexity(result)
-                sc = spacecomplexity(result)
-                
-                optimizer = f()
-                time = @elapsed solve(network, optimizer)
+                minscore = (typemax(Float64), typemax(Float64))
+                mintime = typemax(Float64)
+
+                for _ in 1:10
+                    xperm = randperm(size(matrix, 1)); xinvp = invperm(xperm)
+                    yperm = randperm(size(matrix, 2)); yinvp = invperm(yperm)
+                    network = make(T, xinvp[query], matrix[xperm, yperm], weights[xperm])
+                    
+                    optimizer = f()
+                    result = solve(network, optimizer)
+                    tc = timecomplexity(result)
+                    sc = spacecomplexity(result)
+                    
+                    optimizer = f()
+                    time = @elapsed solve(network, optimizer)
+
+                    minscore = min(minscore, (sc, tc))
+                    mintime = min(mintime, time)
+                end
+
+                minsc, mintc = minscore
 
                 printrow(
                     file,
                     label,
-                    tc,
-                    sc,
-                    time,
+                    mintc,
+                    minsc,
+                    mintime,
                 )
                
                 push!(dataframe, (
-                    tc,
-                    sc,
-                    time,
+                    mintc,
+                    minsc,
+                    mintime,
                     file,
                     label,
                 ))
@@ -149,8 +94,7 @@ function run()
     end
 
     CSV.write("table.csv", dataframe)
-
-    return dataframe
+    return
 end
 
 function plot()

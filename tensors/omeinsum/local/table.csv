@@ -1,0 +1,145 @@
+tc,sc,time,file,label
+17.0,13.0,0.003474417,bristlecone_48_1-16-1_0.txt,CoTenGra
+18.0,14.0,0.008013875,bristlecone_48_1-16-1_0.txt,OMEinsum (Greedy)
+13.0,10.0,0.006614833,bristlecone_48_1-16-1_0.txt,OMEinsum (MF)
+19.0,16.0,0.00412725,bristlecone_48_1-20-1_0.txt,CoTenGra
+24.0,18.0,0.010229167,bristlecone_48_1-20-1_0.txt,OMEinsum (Greedy)
+16.0,12.0,0.008136,bristlecone_48_1-20-1_0.txt,OMEinsum (MF)
+28.0,20.0,0.005022292,bristlecone_48_1-24-1_0.txt,CoTenGra
+30.0,24.0,0.012827458,bristlecone_48_1-24-1_0.txt,OMEinsum (Greedy)
+22.0,17.0,0.009687916,bristlecone_48_1-24-1_0.txt,OMEinsum (MF)
+37.0,31.000000000000004,0.006410375,bristlecone_48_1-32-1_0.txt,CoTenGra
+42.0,30.0,0.01791825,bristlecone_48_1-32-1_0.txt,OMEinsum (Greedy)
+30.0,22.0,0.013219542,bristlecone_48_1-32-1_0.txt,OMEinsum (MF)
+48.0,37.0,0.007946833,bristlecone_48_1-40-1_0.txt,CoTenGra
+53.0,43.0,0.023887292,bristlecone_48_1-40-1_0.txt,OMEinsum (Greedy)
+37.0,28.0,0.016444333,bristlecone_48_1-40-1_0.txt,OMEinsum (MF)
+31.0,23.0,0.006271083,bristlecone_60_1-24-1_0.txt,CoTenGra
+34.0,25.0,0.016504709,bristlecone_60_1-24-1_0.txt,OMEinsum (Greedy)
+25.0,18.0,0.012257917,bristlecone_60_1-24-1_0.txt,OMEinsum (MF)
+40.0,33.0,0.008284708,bristlecone_60_1-32-1_0.txt,CoTenGra
+43.0,37.0,0.022962084,bristlecone_60_1-32-1_0.txt,OMEinsum (Greedy)
+34.0,26.0,0.016333458,bristlecone_60_1-32-1_0.txt,OMEinsum (MF)
+54.0,44.0,0.010219792,bristlecone_60_1-40-1_0.txt,CoTenGra
+59.0,49.0,0.027868583,bristlecone_60_1-40-1_0.txt,OMEinsum (Greedy)
+42.0,31.0,0.020504417,bristlecone_60_1-40-1_0.txt,OMEinsum (MF)
+14.0,11.0,0.0039845,bristlecone_70_1-12-1_0.txt,CoTenGra
+13.0,11.0,0.008873875,bristlecone_70_1-12-1_0.txt,OMEinsum (Greedy)
+11.0,9.0,0.007720041,bristlecone_70_1-12-1_0.txt,OMEinsum (MF)
+21.0,18.0,0.005071541,bristlecone_70_1-16-1_0.txt,CoTenGra
+23.0,18.0,0.01243725,bristlecone_70_1-16-1_0.txt,OMEinsum (Greedy)
+18.0,14.0,0.009973333,bristlecone_70_1-16-1_0.txt,OMEinsum (MF)
+26.0,21.0,0.006292,bristlecone_70_1-20-1_0.txt,CoTenGra
+28.0,22.0,0.01627875,bristlecone_70_1-20-1_0.txt,OMEinsum (Greedy)
+23.0,17.0,0.012386042,bristlecone_70_1-20-1_0.txt,OMEinsum (MF)
+37.0,29.000000000000004,0.007497917,bristlecone_70_1-24-1_0.txt,CoTenGra
+37.0,30.0,0.02019,bristlecone_70_1-24-1_0.txt,OMEinsum (Greedy)
+29.0,22.0,0.01481025,bristlecone_70_1-24-1_0.txt,OMEinsum (MF)
+49.0,39.00000000000001,0.009841958,bristlecone_70_1-32-1_0.txt,CoTenGra
+49.0,41.0,0.026522084,bristlecone_70_1-32-1_0.txt,OMEinsum (Greedy)
+42.0,32.0,0.019886958,bristlecone_70_1-32-1_0.txt,OMEinsum (MF)
+68.0,52.0,0.012188917,bristlecone_70_1-40-1_0.txt,CoTenGra
+75.0,56.0,0.034674042,bristlecone_70_1-40-1_0.txt,OMEinsum (Greedy)
+50.0,39.0,0.025081625,bristlecone_70_1-40-1_0.txt,OMEinsum (MF)
+33.0,25.0,0.010442417,rectangular_11x12_1-16-1_0.txt,CoTenGra
+37.0,27.0,0.025778416,rectangular_11x12_1-16-1_0.txt,OMEinsum (Greedy)
+29.0,23.0,0.021453167,rectangular_11x12_1-16-1_0.txt,OMEinsum (MF)
+53.0,42.0,0.015278666,rectangular_11x12_1-24-1_0.txt,CoTenGra
+56.0,44.0,0.041858625,rectangular_11x12_1-24-1_0.txt,OMEinsum (Greedy)
+49.0,35.0,0.032191416,rectangular_11x12_1-24-1_0.txt,OMEinsum (MF)
+74.0,59.00000000000001,0.020245125,rectangular_11x12_1-32-1_0.txt,CoTenGra
+73.0,60.0,0.064548958,rectangular_11x12_1-32-1_0.txt,OMEinsum (Greedy)
+68.0,50.0,0.049154458,rectangular_11x12_1-32-1_0.txt,OMEinsum (MF)
+103.0,77.0,0.024889334,rectangular_11x12_1-40-1_0.txt,CoTenGra
+111.0,86.0,0.078084417,rectangular_11x12_1-40-1_0.txt,OMEinsum (Greedy)
+91.0,64.0,0.056769583,rectangular_11x12_1-40-1_0.txt,OMEinsum (MF)
+6.0,5.0,0.000156791,rectangular_2x2_1-2-1_0.txt,CoTenGra
+6.0,4.0,0.000192167,rectangular_2x2_1-2-1_0.txt,OMEinsum (Greedy)
+6.0,4.0,0.00026325,rectangular_2x2_1-2-1_0.txt,OMEinsum (MF)
+10.0,8.0,0.001019,rectangular_4x4_1-16-1_0.txt,CoTenGra
+10.0,9.0,0.002237334,rectangular_4x4_1-16-1_0.txt,OMEinsum (Greedy)
+9.0,7.0,0.002060584,rectangular_4x4_1-16-1_0.txt,OMEinsum (MF)
+15.0,12.0,0.002524833,rectangular_6x6_1-16-1_0.txt,CoTenGra
+17.0,14.0,0.005917375,rectangular_6x6_1-16-1_0.txt,OMEinsum (Greedy)
+14.0,11.0,0.004942791,rectangular_6x6_1-16-1_0.txt,OMEinsum (MF)
+26.0,21.0,0.00355575,rectangular_6x6_1-24-1_0.txt,CoTenGra
+27.0,22.0,0.009337375,rectangular_6x6_1-24-1_0.txt,OMEinsum (Greedy)
+22.0,17.0,0.007331375,rectangular_6x6_1-24-1_0.txt,OMEinsum (MF)
+37.0,30.0,0.004698625,rectangular_6x6_1-32-1_0.txt,CoTenGra
+38.0,30.0,0.012971625,rectangular_6x6_1-32-1_0.txt,OMEinsum (Greedy)
+31.0,22.0,0.009928916,rectangular_6x6_1-32-1_0.txt,OMEinsum (MF)
+42.0,34.0,0.0066955,rectangular_7x7_1-32-1_0.txt,CoTenGra
+47.0,37.0,0.019575166,rectangular_7x7_1-32-1_0.txt,OMEinsum (Greedy)
+38.0,29.0,0.014114583,rectangular_7x7_1-32-1_0.txt,OMEinsum (MF)
+60.0,44.0,0.008467042,rectangular_7x7_1-40-1_0.txt,CoTenGra
+62.0,50.0,0.023693792,rectangular_7x7_1-40-1_0.txt,OMEinsum (Greedy)
+50.0,36.0,0.017458708,rectangular_7x7_1-40-1_0.txt,OMEinsum (MF)
+68.0,51.00000000000001,0.010135417,rectangular_7x7_1-48-1_0.txt,CoTenGra
+70.0,55.0,0.02839525,rectangular_7x7_1-48-1_0.txt,OMEinsum (Greedy)
+60.0,43.0,0.021613917,rectangular_7x7_1-48-1_0.txt,OMEinsum (MF)
+36.0,30.0,0.00694125,rectangular_8x8_1-24-1_0.txt,CoTenGra
+38.0,31.0,0.018903792,rectangular_8x8_1-24-1_0.txt,OMEinsum (Greedy)
+32.0,23.0,0.013991833,rectangular_8x8_1-24-1_0.txt,OMEinsum (MF)
+54.0,41.0,0.009127667,rectangular_8x8_1-32-1_0.txt,CoTenGra
+54.0,47.0,0.02523125,rectangular_8x8_1-32-1_0.txt,OMEinsum (Greedy)
+44.0,33.0,0.018876,rectangular_8x8_1-32-1_0.txt,OMEinsum (MF)
+66.0,54.0,0.011243167,rectangular_8x8_1-40-1_0.txt,CoTenGra
+72.0,58.0,0.032022167,rectangular_8x8_1-40-1_0.txt,OMEinsum (Greedy)
+58.0,42.0,0.02819975,rectangular_8x8_1-40-1_0.txt,OMEinsum (MF)
+36.0,30.0,0.007694709,rectangular_8x9_1-24-1_0.txt,CoTenGra
+42.0,33.0,0.021255709,rectangular_8x9_1-24-1_0.txt,OMEinsum (Greedy)
+32.0,24.0,0.015922875,rectangular_8x9_1-24-1_0.txt,OMEinsum (MF)
+54.0,41.0,0.010308792,rectangular_8x9_1-32-1_0.txt,CoTenGra
+58.0,45.0,0.0292025,rectangular_8x9_1-32-1_0.txt,OMEinsum (Greedy)
+43.0,33.0,0.021753375,rectangular_8x9_1-32-1_0.txt,OMEinsum (MF)
+71.0,51.00000000000001,0.012884916,rectangular_8x9_1-40-1_0.txt,CoTenGra
+73.0,58.0,0.037629292,rectangular_8x9_1-40-1_0.txt,OMEinsum (Greedy)
+59.0,42.0,0.028199791,rectangular_8x9_1-40-1_0.txt,OMEinsum (MF)
+17.0,12.0,0.004547209,rochester_53_10_0_pABC.txt,CoTenGra
+15.0,12.0,0.012326,rochester_53_10_0_pABC.txt,OMEinsum (Greedy)
+15.0,12.0,0.011686458,rochester_53_10_0_pABC.txt,OMEinsum (MF)
+21.0,16.0,0.005188416,rochester_53_12_0_pABC.txt,CoTenGra
+21.0,15.0,0.014933917,rochester_53_12_0_pABC.txt,OMEinsum (Greedy)
+20.0,15.0,0.01424375,rochester_53_12_0_pABC.txt,OMEinsum (MF)
+27.0,22.0,0.006762083,rochester_53_16_0_pABC.txt,CoTenGra
+29.0,22.0,0.020988167,rochester_53_16_0_pABC.txt,OMEinsum (Greedy)
+28.0,20.0,0.018967208,rochester_53_16_0_pABC.txt,OMEinsum (MF)
+38.0,27.0,0.00838025,rochester_53_20_0_pABC.txt,CoTenGra
+36.0,27.0,0.026415917,rochester_53_20_0_pABC.txt,OMEinsum (Greedy)
+34.0,25.0,0.024630833,rochester_53_20_0_pABC.txt,OMEinsum (MF)
+6.0,5.0,0.002002875,rochester_53_4_0_pABC.txt,CoTenGra
+6.0,4.0,0.004348708,rochester_53_4_0_pABC.txt,OMEinsum (Greedy)
+5.0,4.0,0.0049615,rochester_53_4_0_pABC.txt,OMEinsum (MF)
+12.0,9.0,0.003709208,rochester_53_8_0_pABC.txt,CoTenGra
+12.0,9.0,0.009722041,rochester_53_8_0_pABC.txt,OMEinsum (Greedy)
+11.0,8.0,0.009587458,rochester_53_8_0_pABC.txt,OMEinsum (MF)
+42.0,29.000000000000004,0.009083208,sycamore_53_10_0.txt,CoTenGra
+39.0,28.0,0.013339375,sycamore_53_10_0.txt,OMEinsum (Greedy)
+38.0,27.0,0.016296042,sycamore_53_10_0.txt,OMEinsum (MF)
+57.0,42.0,0.011126958,sycamore_53_12_0.txt,CoTenGra
+58.0,42.0,0.016885208,sycamore_53_12_0.txt,OMEinsum (Greedy)
+56.0,41.0,0.021050416,sycamore_53_12_0.txt,OMEinsum (MF)
+61.0,44.0,0.01217275,sycamore_53_14_0.txt,CoTenGra
+67.0,47.0,0.01960275,sycamore_53_14_0.txt,OMEinsum (Greedy)
+56.0,44.0,0.024360625,sycamore_53_14_0.txt,OMEinsum (MF)
+75.0,56.0,0.014132208,sycamore_53_16_0.txt,CoTenGra
+83.0,56.0,0.024018625,sycamore_53_16_0.txt,OMEinsum (Greedy)
+75.0,51.0,0.029325958,sycamore_53_16_0.txt,OMEinsum (MF)
+82.0,58.00000000000001,0.01648225,sycamore_53_18_0.txt,CoTenGra
+80.0,59.0,0.027072292,sycamore_53_18_0.txt,OMEinsum (Greedy)
+81.0,55.0,0.03329,sycamore_53_18_0.txt,OMEinsum (MF)
+85.0,60.0,0.018038375,sycamore_53_20_0.txt,CoTenGra
+86.0,62.0,0.031704958,sycamore_53_20_0.txt,OMEinsum (Greedy)
+85.0,58.0,0.038786167,sycamore_53_20_0.txt,OMEinsum (MF)
+14.0,10.0,0.00362425,sycamore_53_4_0.txt,CoTenGra
+15.0,11.0,0.004829458,sycamore_53_4_0.txt,OMEinsum (Greedy)
+14.0,10.0,0.006291708,sycamore_53_4_0.txt,OMEinsum (MF)
+17.0,12.0,0.004560291,sycamore_53_5_0.txt,CoTenGra
+19.0,13.0,0.0062075,sycamore_53_5_0.txt,OMEinsum (Greedy)
+18.0,13.0,0.007893292,sycamore_53_5_0.txt,OMEinsum (MF)
+18.0,13.0,0.005332791,sycamore_53_6_0.txt,CoTenGra
+18.0,13.0,0.007138791,sycamore_53_6_0.txt,OMEinsum (Greedy)
+18.0,13.0,0.009321041,sycamore_53_6_0.txt,OMEinsum (MF)
+35.0,25.0,0.007217166,sycamore_53_8_0.txt,CoTenGra
+35.0,26.0,0.0103575,sycamore_53_8_0.txt,OMEinsum (Greedy)
+35.0,25.0,0.0131135,sycamore_53_8_0.txt,OMEinsum (MF)

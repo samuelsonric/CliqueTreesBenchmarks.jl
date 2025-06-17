@@ -14,8 +14,8 @@ PythonCall = "6099a3de-0909-46bc-b1f4-468b9a2dfc0d"
 Yao = "5872b779-8223-5990-8dd0-5abbb0748c8c"
 
 [sources]
-EinExprs = {path = "../../../EinExprs.jl"}
-OMEinsumContractionOrders = {path = "../../../OMEinsumContractionOrders.jl"}
+EinExprs = {path = "../../../../EinExprs.jl"}
+OMEinsumContractionOrders = {path = "../../../../OMEinsumContractionOrders.jl"}
 
 [compat]
 AbstractTrees = "0.4.5"
