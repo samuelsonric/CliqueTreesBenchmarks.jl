@@ -1,72 +1,150 @@
 module TensorBenchmarks
 
+include("YaoQASMReader.jl")
+
 using AbstractTrees
 using CliqueTrees
 using EinExprs
+using OMEinsum
 using OMEinsumContractionOrders
 using PythonCall
 using SparseArrays
 using Yao
+using .YaoQASMReader
 
-using OMEinsum: getixsv, get_size_dict, LeafString
+using OMEinsum: get_size_dict, LeafString
 using Yao: TensorNetwork
 
-export make, solve, timecomplexity, spacecomplexity
+export read, make, solve, timecomplexity, spacecomplexity
 
-function make(::Type{TensorNetwork}, circuit)
+function read(file::String)
+    circuit = yaocircuit_from_qasm(file)
+
     n = nqubits(circuit)
-    
+
     network = yao2einsum(circuit;
         initial_state = Dict(zip(1:n, zeros(Int, n))),
         final_state = Dict(zip(1:n, zeros(Int, n))),
         optimizer = nothing,
     )
-    
-    return network
-end
 
-function make(::Type{SizedEinExpr}, circuit)
-    n = nqubits(circuit)
-    
-    network = yao2einsum(circuit;
-        initial_state = Dict(zip(1:n, zeros(Int, n))),
-        final_state = Dict(zip(1:n, zeros(Int, n))),
-        optimizer = nothing,
-    )
-    
     query = network.code.iy
     indices = network.code.ixs
     tensors = network.tensors
-    
-    args = map(indices) do i
-        return EinExpr(i)
+
+    m = n = 0
+    colptr = Int[]; rowval = Int[]; nzval = Int[]
+    push!(colptr, 1); p = 1
+
+    for index in indices
+        for i in index
+            push!(rowval, i); p += 1
+            push!(nzval, 1)
+            m = max(m, i)
+        end
+
+        push!(colptr, p); n += 1
     end
-    
-    size = get_size_dict(indices, tensors)
-    return SizedEinExpr(EinExpr(query, args), size)
+
+    weights = Vector{Int}(undef, m)
+
+    for (i, v) in get_size_dict(indices, tensors)    
+        weights[i] = v
+    end
+
+    matrix = SparseMatrixCSC(m, n, colptr, rowval, nzval)
+    matrix = copy(transpose(copy(transpose(matrix))))
+    return query, matrix, weights
 end
 
-function make(::Type{Py}, circuit)
-    n = nqubits(circuit)
-    
-    network = yao2einsum(circuit;
-        initial_state = Dict(zip(1:n, zeros(Int, n))),
-        final_state = Dict(zip(1:n, zeros(Int, n))),
-        optimizer = nothing,
-    )
-    
-    query = network.code.iy
-    indices = network.code.ixs
-    tensors = network.tensors
-    
-    inputs = pylist(map(i -> pylist(map(Char, i)), indices))
-    outputs = pylist(map(Char, query))
-    size = pydict(Dict(Char(i) => x for (i, x) in get_size_dict(indices, tensors)))
-    return inputs, outputs, size
+function make(::Type{Tuple{DynamicEinCode, Dict}}, query, matrix, weights)
+    ixs = Vector{Int}[]; iy = Int[]; size_dict = Dict{Int, Int}()
+
+    for j in axes(matrix, 2)
+        pstart = matrix.colptr[j]
+        pstop = matrix.colptr[j + 1] - 1
+        ix = Int[]
+
+        for p in pstart:pstop
+            i = matrix.rowval[p]
+            push!(ix, i)
+        end
+
+        push!(ixs, ix)
+    end
+
+    for i in query
+        push!(iy, i)
+    end
+
+    for (i, v) in enumerate(weights)
+        size_dict[i] = v
+    end
+
+    return (DynamicEinCode(ixs, iy), size_dict)
 end
 
-function solve(network::TensorNetwork, optimizer)
-    return optimize_code(network, optimizer, MergeVectors())
+function make(::Type{SizedEinExpr}, query, matrix, weights)
+    path = EinCode(Int[]); size_dict = Dict{Int, Int}()
+
+    for j in axes(matrix, 2)
+        pstart = matrix.colptr[j]
+        pstop = matrix.colptr[j + 1] - 1
+        arg = EinCode(Int[])
+
+        for p in pstart:pstop
+            i = matrix.rowval[p]
+            push!(arg.head, i)
+        end
+
+        push!(path.args, arg)
+    end
+
+    for i in query
+        push!(path.head, i)
+    end
+
+    for (i, v) in enumerate(weights)
+        size_dict[i] = v
+    end
+
+    return SizedEinExpr(path, size_dict)
+end
+
+function make(::Type{Tuple{Py, Py, Py}}, query, matrix, weights)
+    inputs = Py[]; outputs = Char[]; size_dict = Dict{Char, Int}()
+
+    for j in axes(matrix, 2)
+        pstart = matrix.colptr[j]
+        pstop = matrix.colptr[j + 1] - 1
+        input = Char[]
+
+        for p in pstart:pstop
+            i = matrix.rowval[p]
+            c = Char(i)
+            push!(input, c)
+        end
+
+        push!(inputs, pylist(input))
+    end
+
+    for i in query
+        c = Char(i)
+        push!(outputs, c)
+    end
+
+    for (i, v) in enumerate(weights)
+        c = Char(i)
+        size_dict[c] = v
+    end
+
+    return pylist(inputs), pylist(outputs), pydict(size_dict)
+end
+
+function solve(network::Tuple{DynamicEinCode, Dict}, optimizer)
+    code, size = network
+    optcode = optimize_code(code, size, optimizer, MergeVectors())
+    return (optcode, size)
 end
 
 function solve(network::SizedEinExpr, optimizer)
@@ -77,11 +155,10 @@ function solve(network::Tuple{Py, Py, Py}, optimizer)
     return optimizer.search(network...)
 end
 
-function timecomplexity(network::TensorNetwork)
-    tree = network.code
-    size = get_size_dict(getixsv(tree), network.tensors)
-    
-    m = 0; index = Dict{Int, Int}(); weights = Float64[]
+function timecomplexity(network::Tuple{DynamicNestedEinsum{L}, Dict{L}}) where {L}
+    tree, size = network
+
+    m = 0; index = Dict{L, Int}(); weights = Float64[]
     
     for node in PreOrderDFS(tree)
         if !isa(node, LeafString)
@@ -205,13 +282,8 @@ function timecomplexity(network::Py)
     return treewidth(weights, dualgraph; alg=m:-1:1)
 end
 
-function timecomplexity(network)
-    return treewidth(decomposition(network)...)
-end
-
-function spacecomplexity(network::TensorNetwork)
-    tree = network.code
-    size = get_size_dict(getixsv(tree), network.tensors)
+function spacecomplexity(network::Tuple{DynamicNestedEinsum{L}, Dict{L}}) where {L}
+    tree, size = network
     maxwidth = 0.0
 
     for node in PreOrderDFS(tree)
@@ -223,7 +295,7 @@ function spacecomplexity(network::TensorNetwork)
             end
         else
             for string in eachsplit(node.str, "∘")
-                label = parse(Int, string)
+                label = parse(L, string)
                 width += log2(size[label])
             end
         end
