@@ -1,25 +1,20 @@
 module TensorBenchmarks
 
-include("YaoQASMReader.jl")
-
 using AbstractTrees
 using CliqueTrees
 using EinExprs
-using OMEinsum
+using JSON
 using OMEinsumContractionOrders
 using PythonCall
 using SparseArrays
-using Yao
-using .YaoQASMReader
 
-using OMEinsum: get_size_dict, LeafString
-using Yao: TensorNetwork
+using OMEinsumContractionOrders: NestedEinsum, EinCode, LeafString
 
 export printrow, profile, read, make, solve, timecomplexity, spacecomplexity
 
 function printrow(circuit, algorithm, tc, sc, time)
     print(" | ")
-    print(rpad(circuit, 30))
+    print(rpad(circuit, 60))
     print(" | ")
     print(rpad(algorithm, 20))
     print(" | ")
@@ -84,26 +79,19 @@ function profile(matrix::Matrix{Float64})
 end
 
 function read(file::String)
-    circuit = yaocircuit_from_qasm(file)
+    dict = JSON.parsefile(file)
+    einsum = dict["einsum"]
 
-    n = nqubits(circuit)
-
-    network = yao2einsum(circuit;
-        initial_state = Dict(zip(1:n, zeros(Int, n))),
-        final_state = Dict(zip(1:n, zeros(Int, n))),
-        optimizer = nothing,
-    )
-
-    query = network.code.iy
-    indices = network.code.ixs
-    tensors = network.tensors
+    ixs = Vector{Vector{Int}}(einsum["ixs"])
+    iy = Vector{Int}(einsum["iy"])
+    size = Dict{String, Int}(dict["size"])
 
     m = n = 0
     colptr = Int[]; rowval = Int[]; nzval = Int[]
     push!(colptr, 1); p = 1
 
-    for index in indices
-        for i in index
+    for ix in ixs
+        for i in ix
             push!(rowval, i); p += 1
             push!(nzval, 1)
             m = max(m, i)
@@ -114,16 +102,16 @@ function read(file::String)
 
     weights = Vector{Int}(undef, m)
 
-    for (i, v) in get_size_dict(indices, tensors)    
-        weights[i] = v
+    for (k, v) in size
+        i = parse(Int, k); weights[i] = v
     end
 
     matrix = SparseMatrixCSC(m, n, colptr, rowval, nzval)
     matrix = copy(transpose(copy(transpose(matrix))))
-    return query, matrix, weights
+    return iy, matrix, weights
 end
 
-function make(::Type{Tuple{DynamicEinCode, Dict}}, query, matrix, weights)
+function make(::Type{Tuple{EinCode, Dict}}, query, matrix, weights)
     ixs = Vector{Int}[]; iy = Int[]; size_dict = Dict{Int, Int}()
 
     for j in axes(matrix, 2)
@@ -147,7 +135,7 @@ function make(::Type{Tuple{DynamicEinCode, Dict}}, query, matrix, weights)
         size_dict[i] = v
     end
 
-    return (DynamicEinCode(ixs, iy), size_dict)
+    return (EinCode(ixs, iy), size_dict)
 end
 
 function make(::Type{SizedEinExpr}, query, matrix, weights)
@@ -207,7 +195,7 @@ function make(::Type{Tuple{Py, Py, Py}}, query, matrix, weights)
     return pylist(inputs), pylist(outputs), pydict(size_dict)
 end
 
-function solve(network::Tuple{DynamicEinCode, Dict}, optimizer)
+function solve(network::Tuple{EinCode, Dict}, optimizer)
     code, size = network
     optcode = optimize_code(code, size, optimizer, MergeVectors())
     return (optcode, size)
@@ -221,7 +209,7 @@ function solve(network::Tuple{Py, Py, Py}, optimizer)
     return optimizer.search(network...)
 end
 
-function timecomplexity(network::Tuple{DynamicNestedEinsum{L}, Dict{L}}) where {L}
+function timecomplexity(network::Tuple{NestedEinsum{L}, Dict{L}}) where {L}
     tree, size = network
 
     m = 0; index = Dict{L, Int}(); weights = Float64[]
@@ -348,7 +336,7 @@ function timecomplexity(network::Py)
     return treewidth(weights, dualgraph; alg=m:-1:1)
 end
 
-function spacecomplexity(network::Tuple{DynamicNestedEinsum{L}, Dict{L}}) where {L}
+function spacecomplexity(network::Tuple{NestedEinsum{L}, Dict{L}}) where {L}
     tree, size = network
     maxwidth = 0.0
 

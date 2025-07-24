@@ -1,145 +1,145 @@
 tc,sc,time,file,label
-15.0,13.0,9.383542166,bristlecone_48_1-16-1_0.txt,CoTenGra
-13.0,12.0,2.551237875,bristlecone_48_1-16-1_0.txt,EinExprs (KaHyPar)
-13.0,12.0,0.359539958,bristlecone_48_1-16-1_0.txt,EinExprs (METIS)
-18.0,16.0,13.316404209,bristlecone_48_1-20-1_0.txt,CoTenGra
-16.0,14.0,4.31253925,bristlecone_48_1-20-1_0.txt,EinExprs (KaHyPar)
-16.0,14.0,0.480332333,bristlecone_48_1-20-1_0.txt,EinExprs (METIS)
-21.0,16.0,13.206715583,bristlecone_48_1-24-1_0.txt,CoTenGra
-20.0,17.0,9.317939541,bristlecone_48_1-24-1_0.txt,EinExprs (KaHyPar)
-20.0,17.0,0.645548083,bristlecone_48_1-24-1_0.txt,EinExprs (METIS)
-29.0,24.0,37.931008125,bristlecone_48_1-32-1_0.txt,CoTenGra
-27.0,23.0,14.331123917,bristlecone_48_1-32-1_0.txt,EinExprs (KaHyPar)
-27.0,23.0,0.979613959,bristlecone_48_1-32-1_0.txt,EinExprs (METIS)
-37.0,28.0,60.602894,bristlecone_48_1-40-1_0.txt,CoTenGra
-33.0,30.0,20.344317042,bristlecone_48_1-40-1_0.txt,EinExprs (KaHyPar)
-33.0,28.0,1.390144125,bristlecone_48_1-40-1_0.txt,EinExprs (METIS)
-27.0,23.0,21.602661208,bristlecone_60_1-24-1_0.txt,CoTenGra
-22.0,19.0,11.383024125,bristlecone_60_1-24-1_0.txt,EinExprs (KaHyPar)
-21.0,20.0,0.830922458,bristlecone_60_1-24-1_0.txt,EinExprs (METIS)
-33.0,27.0,44.735326459,bristlecone_60_1-32-1_0.txt,CoTenGra
-31.0,26.0,18.561363667,bristlecone_60_1-32-1_0.txt,EinExprs (KaHyPar)
-30.0,27.0,1.277796792,bristlecone_60_1-32-1_0.txt,EinExprs (METIS)
-43.0,37.0,62.190013541,bristlecone_60_1-40-1_0.txt,CoTenGra
-36.0,32.0,27.425463,bristlecone_60_1-40-1_0.txt,EinExprs (KaHyPar)
-35.0,34.0,1.750124,bristlecone_60_1-40-1_0.txt,EinExprs (METIS)
-14.0,11.0,6.89964825,bristlecone_70_1-12-1_0.txt,CoTenGra
-12.0,10.0,2.448305208,bristlecone_70_1-12-1_0.txt,EinExprs (KaHyPar)
-11.0,10.0,0.372644083,bristlecone_70_1-12-1_0.txt,EinExprs (METIS)
-19.0,15.0,18.690265917,bristlecone_70_1-16-1_0.txt,CoTenGra
-18.0,16.0,6.376668584,bristlecone_70_1-16-1_0.txt,EinExprs (KaHyPar)
-17.0,15.0,0.5623395,bristlecone_70_1-16-1_0.txt,EinExprs (METIS)
-23.0,18.0,19.63988425,bristlecone_70_1-20-1_0.txt,CoTenGra
-20.0,17.0,10.949370791,bristlecone_70_1-20-1_0.txt,EinExprs (KaHyPar)
-20.0,17.0,0.783508958,bristlecone_70_1-20-1_0.txt,EinExprs (METIS)
-29.0,25.0,36.310292375,bristlecone_70_1-24-1_0.txt,CoTenGra
-25.0,22.0,14.418612041,bristlecone_70_1-24-1_0.txt,EinExprs (KaHyPar)
-26.0,22.0,1.019445917,bristlecone_70_1-24-1_0.txt,EinExprs (METIS)
-40.0,34.0,55.748494875,bristlecone_70_1-32-1_0.txt,CoTenGra
-32.0,29.0,24.454936041,bristlecone_70_1-32-1_0.txt,EinExprs (KaHyPar)
-33.0,29.0,1.650225375,bristlecone_70_1-32-1_0.txt,EinExprs (METIS)
-46.0,38.0,56.493119584,bristlecone_70_1-40-1_0.txt,CoTenGra
-40.0,35.0,34.551217292,bristlecone_70_1-40-1_0.txt,EinExprs (KaHyPar)
-39.0,37.0,2.362853792,bristlecone_70_1-40-1_0.txt,EinExprs (METIS)
-30.0,23.0,50.578827709,rectangular_11x12_1-16-1_0.txt,CoTenGra
-27.0,23.0,18.729572291,rectangular_11x12_1-16-1_0.txt,EinExprs (KaHyPar)
-27.0,23.0,1.472176708,rectangular_11x12_1-16-1_0.txt,EinExprs (METIS)
-47.0,38.0,73.697749042,rectangular_11x12_1-24-1_0.txt,CoTenGra
-42.0,36.0,37.420992084,rectangular_11x12_1-24-1_0.txt,EinExprs (KaHyPar)
-41.0,35.0,2.696391084,rectangular_11x12_1-24-1_0.txt,EinExprs (METIS)
-61.0,52.0,104.361359834,rectangular_11x12_1-32-1_0.txt,CoTenGra
-57.0,48.0,61.662590459,rectangular_11x12_1-32-1_0.txt,EinExprs (KaHyPar)
-53.0,47.0,4.633247625,rectangular_11x12_1-32-1_0.txt,EinExprs (METIS)
-80.0,64.0,206.157008208,rectangular_11x12_1-40-1_0.txt,CoTenGra
-71.0,60.0,86.855772542,rectangular_11x12_1-40-1_0.txt,EinExprs (KaHyPar)
-65.0,59.0,7.054933583,rectangular_11x12_1-40-1_0.txt,EinExprs (METIS)
-6.0,4.0,0.769279,rectangular_2x2_1-2-1_0.txt,CoTenGra
-6.0,6.0,0.014892708,rectangular_2x2_1-2-1_0.txt,EinExprs (KaHyPar)
-6.0,6.0,0.0354475,rectangular_2x2_1-2-1_0.txt,EinExprs (METIS)
-9.0,7.0,1.967368291,rectangular_4x4_1-16-1_0.txt,CoTenGra
-10.0,8.0,0.093361125,rectangular_4x4_1-16-1_0.txt,EinExprs (KaHyPar)
-10.0,8.0,0.081891416,rectangular_4x4_1-16-1_0.txt,EinExprs (METIS)
-14.0,13.0,6.366111708,rectangular_6x6_1-16-1_0.txt,CoTenGra
-14.0,11.0,0.246001709,rectangular_6x6_1-16-1_0.txt,EinExprs (KaHyPar)
-14.0,11.0,0.242353625,rectangular_6x6_1-16-1_0.txt,EinExprs (METIS)
-23.0,20.0,11.907741333,rectangular_6x6_1-24-1_0.txt,CoTenGra
-21.0,17.0,4.706712416,rectangular_6x6_1-24-1_0.txt,EinExprs (KaHyPar)
-21.0,18.0,0.4565985,rectangular_6x6_1-24-1_0.txt,EinExprs (METIS)
-31.0,27.0,24.040183792,rectangular_6x6_1-32-1_0.txt,CoTenGra
-27.0,24.0,10.619997375,rectangular_6x6_1-32-1_0.txt,EinExprs (KaHyPar)
-28.0,24.0,0.758353541,rectangular_6x6_1-32-1_0.txt,EinExprs (METIS)
-39.0,32.0,43.631391791,rectangular_7x7_1-32-1_0.txt,CoTenGra
-33.0,30.0,15.992738875,rectangular_7x7_1-32-1_0.txt,EinExprs (KaHyPar)
-33.0,28.0,1.154152625,rectangular_7x7_1-32-1_0.txt,EinExprs (METIS)
-47.0,38.0,61.831660042,rectangular_7x7_1-40-1_0.txt,CoTenGra
-43.0,36.0,24.022850042,rectangular_7x7_1-40-1_0.txt,EinExprs (KaHyPar)
-40.0,36.0,1.657251292,rectangular_7x7_1-40-1_0.txt,EinExprs (METIS)
-57.0,50.0,39.509469708,rectangular_7x7_1-48-1_0.txt,CoTenGra
-51.0,45.0,31.079446625,rectangular_7x7_1-48-1_0.txt,EinExprs (KaHyPar)
-49.0,43.0,2.282210584,rectangular_7x7_1-48-1_0.txt,EinExprs (METIS)
-33.0,27.0,59.805770291,rectangular_8x8_1-24-1_0.txt,CoTenGra
-28.0,25.0,14.234249625,rectangular_8x8_1-24-1_0.txt,EinExprs (KaHyPar)
-29.0,25.0,1.033433125,rectangular_8x8_1-24-1_0.txt,EinExprs (METIS)
-45.0,34.0,37.248532834,rectangular_8x8_1-32-1_0.txt,CoTenGra
-38.0,34.0,25.233679083,rectangular_8x8_1-32-1_0.txt,EinExprs (KaHyPar)
-37.0,33.0,1.688566667,rectangular_8x8_1-32-1_0.txt,EinExprs (METIS)
-56.0,45.0,97.377749417,rectangular_8x8_1-40-1_0.txt,CoTenGra
-48.0,41.0,33.672069792,rectangular_8x8_1-40-1_0.txt,EinExprs (KaHyPar)
-47.0,41.0,2.778207792,rectangular_8x8_1-40-1_0.txt,EinExprs (METIS)
-32.0,26.0,40.169836459,rectangular_8x9_1-24-1_0.txt,CoTenGra
-30.0,26.0,16.630385709,rectangular_8x9_1-24-1_0.txt,EinExprs (KaHyPar)
-30.0,26.0,1.210491875,rectangular_8x9_1-24-1_0.txt,EinExprs (METIS)
-43.0,34.0,75.858080292,rectangular_8x9_1-32-1_0.txt,CoTenGra
-40.0,34.0,28.454525292,rectangular_8x9_1-32-1_0.txt,EinExprs (KaHyPar)
-36.0,34.0,1.911971291,rectangular_8x9_1-32-1_0.txt,EinExprs (METIS)
-53.0,47.00000000000001,103.428173709,rectangular_8x9_1-40-1_0.txt,CoTenGra
-51.0,44.0,38.704377917,rectangular_8x9_1-40-1_0.txt,EinExprs (KaHyPar)
-47.0,43.0,2.8290235,rectangular_8x9_1-40-1_0.txt,EinExprs (METIS)
-15.0,11.0,10.108938417,rochester_53_10_0_pABC.txt,CoTenGra
-15.0,12.0,8.31662725,rochester_53_10_0_pABC.txt,EinExprs (KaHyPar)
-15.0,12.0,0.624822334,rochester_53_10_0_pABC.txt,EinExprs (METIS)
-19.0,14.0,10.891260708,rochester_53_12_0_pABC.txt,CoTenGra
-18.0,15.0,12.679789292,rochester_53_12_0_pABC.txt,EinExprs (KaHyPar)
-18.0,14.0,0.804366,rochester_53_12_0_pABC.txt,EinExprs (METIS)
-25.0,20.0,28.139778959,rochester_53_16_0_pABC.txt,CoTenGra
-22.0,18.0,21.452175916,rochester_53_16_0_pABC.txt,EinExprs (KaHyPar)
-23.0,19.0,1.278521,rochester_53_16_0_pABC.txt,EinExprs (METIS)
-32.0,26.0,35.739508459,rochester_53_20_0_pABC.txt,CoTenGra
-28.0,22.0,31.973288334,rochester_53_20_0_pABC.txt,EinExprs (KaHyPar)
-27.0,23.0,1.778135959,rochester_53_20_0_pABC.txt,EinExprs (METIS)
-5.0,4.0,3.668996666,rochester_53_4_0_pABC.txt,CoTenGra
-5.0,5.0,0.189172792,rochester_53_4_0_pABC.txt,EinExprs (KaHyPar)
-5.0,5.0,0.182740542,rochester_53_4_0_pABC.txt,EinExprs (METIS)
-11.0,9.0,6.136755708,rochester_53_8_0_pABC.txt,CoTenGra
-11.0,9.0,5.126320958,rochester_53_8_0_pABC.txt,EinExprs (KaHyPar)
-11.0,10.0,0.435391709,rochester_53_8_0_pABC.txt,EinExprs (METIS)
-35.0,26.0,37.460051666,sycamore_53_10_0.txt,CoTenGra
-33.0,27.0,17.213532917,sycamore_53_10_0.txt,EinExprs (KaHyPar)
-34.0,30.0,1.70807575,sycamore_53_10_0.txt,EinExprs (METIS)
-50.0,38.0,61.213450083,sycamore_53_12_0.txt,CoTenGra
-47.0,42.0,26.011112958,sycamore_53_12_0.txt,EinExprs (KaHyPar)
-47.0,38.0,2.630039125,sycamore_53_12_0.txt,EinExprs (METIS)
-54.0,41.0,61.522758291,sycamore_53_14_0.txt,CoTenGra
-52.0,46.0,32.017856791,sycamore_53_14_0.txt,EinExprs (KaHyPar)
-50.0,40.0,3.073208375,sycamore_53_14_0.txt,EinExprs (METIS)
-63.0,53.0,72.825228834,sycamore_53_16_0.txt,CoTenGra
-62.0,48.0,41.827032041,sycamore_53_16_0.txt,EinExprs (KaHyPar)
-60.0,51.0,4.5336665,sycamore_53_16_0.txt,EinExprs (METIS)
-69.0,52.0,94.374236167,sycamore_53_18_0.txt,CoTenGra
-68.0,60.0,46.232280083,sycamore_53_18_0.txt,EinExprs (KaHyPar)
-65.0,54.0,4.913373334,sycamore_53_18_0.txt,EinExprs (METIS)
-73.0,57.0,86.228589667,sycamore_53_20_0.txt,CoTenGra
-71.0,67.0,54.572831,sycamore_53_20_0.txt,EinExprs (KaHyPar)
-65.0,55.0,6.328272709,sycamore_53_20_0.txt,EinExprs (METIS)
-14.0,10.0,11.04386325,sycamore_53_4_0.txt,CoTenGra
-16.0,16.0,0.409011125,sycamore_53_4_0.txt,EinExprs (KaHyPar)
-16.0,16.0,0.369711583,sycamore_53_4_0.txt,EinExprs (METIS)
-15.0,12.0,9.25354075,sycamore_53_5_0.txt,CoTenGra
-16.0,13.0,3.040561583,sycamore_53_5_0.txt,EinExprs (KaHyPar)
-17.0,12.0,0.568920958,sycamore_53_5_0.txt,EinExprs (METIS)
-17.0,13.0,9.068038458,sycamore_53_6_0.txt,CoTenGra
-17.0,13.0,5.571920416,sycamore_53_6_0.txt,EinExprs (KaHyPar)
-17.0,13.0,0.731445458,sycamore_53_6_0.txt,EinExprs (METIS)
-31.0,23.0,27.852210084,sycamore_53_8_0.txt,CoTenGra
-30.0,24.0,12.255519833,sycamore_53_8_0.txt,EinExprs (KaHyPar)
-31.0,28.0,1.27331475,sycamore_53_8_0.txt,EinExprs (METIS)
+15.0,12.0,14.058002041,bristlecone_48_1-16-1_0.txt,CoTenGra
+13.0,12.0,1.448095875,bristlecone_48_1-16-1_0.txt,EinExprs (KaHyPar)
+13.0,12.0,0.06436825,bristlecone_48_1-16-1_0.txt,EinExprs (METIS)
+18.0,16.0,11.2364525,bristlecone_48_1-20-1_0.txt,CoTenGra
+16.0,15.0,1.897086916,bristlecone_48_1-20-1_0.txt,EinExprs (KaHyPar)
+15.0,14.0,0.100144708,bristlecone_48_1-20-1_0.txt,EinExprs (METIS)
+21.0,20.0,19.834680875,bristlecone_48_1-24-1_0.txt,CoTenGra
+20.0,18.0,3.8545395,bristlecone_48_1-24-1_0.txt,EinExprs (KaHyPar)
+20.0,17.0,0.206504625,bristlecone_48_1-24-1_0.txt,EinExprs (METIS)
+29.0,27.0,28.683627,bristlecone_48_1-32-1_0.txt,CoTenGra
+27.0,27.0,6.972393208,bristlecone_48_1-32-1_0.txt,EinExprs (KaHyPar)
+27.0,24.0,0.379946292,bristlecone_48_1-32-1_0.txt,EinExprs (METIS)
+36.0,27.0,59.386096333,bristlecone_48_1-40-1_0.txt,CoTenGra
+33.0,29.0,10.405458667,bristlecone_48_1-40-1_0.txt,EinExprs (KaHyPar)
+33.0,29.0,0.625953917,bristlecone_48_1-40-1_0.txt,EinExprs (METIS)
+24.0,20.0,17.136361584,bristlecone_60_1-24-1_0.txt,CoTenGra
+22.0,19.0,5.570175625,bristlecone_60_1-24-1_0.txt,EinExprs (KaHyPar)
+21.0,19.0,0.276530375,bristlecone_60_1-24-1_0.txt,EinExprs (METIS)
+34.0,24.0,53.548191541,bristlecone_60_1-32-1_0.txt,CoTenGra
+29.0,26.0,9.116641333,bristlecone_60_1-32-1_0.txt,EinExprs (KaHyPar)
+29.0,28.0,0.517203583,bristlecone_60_1-32-1_0.txt,EinExprs (METIS)
+41.0,33.0,33.512499833,bristlecone_60_1-40-1_0.txt,CoTenGra
+34.0,31.0,13.479144542,bristlecone_60_1-40-1_0.txt,EinExprs (KaHyPar)
+34.0,32.0,0.84672075,bristlecone_60_1-40-1_0.txt,EinExprs (METIS)
+13.0,9.0,9.642389583,bristlecone_70_1-12-1_0.txt,CoTenGra
+11.0,11.0,0.020547125,bristlecone_70_1-12-1_0.txt,EinExprs (KaHyPar)
+11.0,11.0,0.014708958,bristlecone_70_1-12-1_0.txt,EinExprs (METIS)
+18.0,16.0,15.474831459,bristlecone_70_1-16-1_0.txt,CoTenGra
+16.0,14.0,3.08994925,bristlecone_70_1-16-1_0.txt,EinExprs (KaHyPar)
+16.0,14.0,0.139778459,bristlecone_70_1-16-1_0.txt,EinExprs (METIS)
+24.0,21.0,23.242305542,bristlecone_70_1-20-1_0.txt,CoTenGra
+20.0,17.0,5.396176166,bristlecone_70_1-20-1_0.txt,EinExprs (KaHyPar)
+20.0,17.0,0.260344542,bristlecone_70_1-20-1_0.txt,EinExprs (METIS)
+29.0,24.0,24.940163667,bristlecone_70_1-24-1_0.txt,CoTenGra
+23.0,22.0,7.30226625,bristlecone_70_1-24-1_0.txt,EinExprs (KaHyPar)
+24.0,22.0,0.383428666,bristlecone_70_1-24-1_0.txt,EinExprs (METIS)
+38.0,32.0,45.980550041,bristlecone_70_1-32-1_0.txt,CoTenGra
+31.0,28.0,12.287565708,bristlecone_70_1-32-1_0.txt,EinExprs (KaHyPar)
+32.0,31.0,0.736314667,bristlecone_70_1-32-1_0.txt,EinExprs (METIS)
+48.0,40.0,48.644372125,bristlecone_70_1-40-1_0.txt,CoTenGra
+39.0,36.0,17.472868834,bristlecone_70_1-40-1_0.txt,EinExprs (KaHyPar)
+39.0,37.0,1.18498225,bristlecone_70_1-40-1_0.txt,EinExprs (METIS)
+35.0,25.0,52.234921667,rectangular_11x12_1-16-1_0.txt,CoTenGra
+26.0,24.0,8.973125042,rectangular_11x12_1-16-1_0.txt,EinExprs (KaHyPar)
+26.0,24.0,0.496592625,rectangular_11x12_1-16-1_0.txt,EinExprs (METIS)
+47.0,39.00000000000001,72.178983875,rectangular_11x12_1-24-1_0.txt,CoTenGra
+40.0,36.0,18.562845166,rectangular_11x12_1-24-1_0.txt,EinExprs (KaHyPar)
+40.0,36.0,1.240310292,rectangular_11x12_1-24-1_0.txt,EinExprs (METIS)
+61.0,51.00000000000001,159.232204958,rectangular_11x12_1-32-1_0.txt,CoTenGra
+55.0,47.0,31.316166333,rectangular_11x12_1-32-1_0.txt,EinExprs (KaHyPar)
+51.0,46.0,2.54292675,rectangular_11x12_1-32-1_0.txt,EinExprs (METIS)
+77.0,64.0,118.302309833,rectangular_11x12_1-40-1_0.txt,CoTenGra
+68.0,62.0,43.640469958,rectangular_11x12_1-40-1_0.txt,EinExprs (KaHyPar)
+63.0,58.0,4.398373542,rectangular_11x12_1-40-1_0.txt,EinExprs (METIS)
+6.0,4.0,0.731848208,rectangular_2x2_1-2-1_0.txt,CoTenGra
+6.0,6.0,9.8e-5,rectangular_2x2_1-2-1_0.txt,EinExprs (KaHyPar)
+6.0,6.0,9.8375e-5,rectangular_2x2_1-2-1_0.txt,EinExprs (METIS)
+9.0,7.0,1.472524,rectangular_4x4_1-16-1_0.txt,CoTenGra
+9.0,9.0,0.0029505,rectangular_4x4_1-16-1_0.txt,EinExprs (KaHyPar)
+9.0,9.0,0.003022375,rectangular_4x4_1-16-1_0.txt,EinExprs (METIS)
+14.0,11.0,3.750575083,rectangular_6x6_1-16-1_0.txt,CoTenGra
+13.0,11.0,0.025013334,rectangular_6x6_1-16-1_0.txt,EinExprs (KaHyPar)
+13.0,11.0,0.017179584,rectangular_6x6_1-16-1_0.txt,EinExprs (METIS)
+23.0,17.0,14.436139375,rectangular_6x6_1-24-1_0.txt,CoTenGra
+21.0,17.0,2.2304205,rectangular_6x6_1-24-1_0.txt,EinExprs (KaHyPar)
+21.0,17.0,0.12150225,rectangular_6x6_1-24-1_0.txt,EinExprs (METIS)
+30.0,23.0,19.194209208,rectangular_6x6_1-32-1_0.txt,CoTenGra
+27.0,24.0,5.319999833,rectangular_6x6_1-32-1_0.txt,EinExprs (KaHyPar)
+26.0,25.0,0.28416975,rectangular_6x6_1-32-1_0.txt,EinExprs (METIS)
+40.0,31.000000000000004,25.790644,rectangular_7x7_1-32-1_0.txt,CoTenGra
+33.0,30.0,7.963695625,rectangular_7x7_1-32-1_0.txt,EinExprs (KaHyPar)
+32.0,29.0,0.497148833,rectangular_7x7_1-32-1_0.txt,EinExprs (METIS)
+45.0,35.0,86.161276458,rectangular_7x7_1-40-1_0.txt,CoTenGra
+41.0,36.0,11.758209917,rectangular_7x7_1-40-1_0.txt,EinExprs (KaHyPar)
+40.0,36.0,0.81843475,rectangular_7x7_1-40-1_0.txt,EinExprs (METIS)
+55.0,52.0,35.531773083,rectangular_7x7_1-48-1_0.txt,CoTenGra
+49.0,46.0,15.849273291,rectangular_7x7_1-48-1_0.txt,EinExprs (KaHyPar)
+48.0,46.0,1.215720375,rectangular_7x7_1-48-1_0.txt,EinExprs (METIS)
+29.0,23.0,55.2740415,rectangular_8x8_1-24-1_0.txt,CoTenGra
+27.0,25.0,6.75057125,rectangular_8x8_1-24-1_0.txt,EinExprs (KaHyPar)
+27.0,24.0,0.37380725,rectangular_8x8_1-24-1_0.txt,EinExprs (METIS)
+40.0,34.0,47.810124459,rectangular_8x8_1-32-1_0.txt,CoTenGra
+37.0,34.0,11.540378917,rectangular_8x8_1-32-1_0.txt,EinExprs (KaHyPar)
+37.0,33.0,0.731784958,rectangular_8x8_1-32-1_0.txt,EinExprs (METIS)
+55.0,41.0,85.333216542,rectangular_8x8_1-40-1_0.txt,CoTenGra
+47.0,43.0,16.721854916,rectangular_8x8_1-40-1_0.txt,EinExprs (KaHyPar)
+45.0,43.0,1.240698125,rectangular_8x8_1-40-1_0.txt,EinExprs (METIS)
+33.0,29.000000000000004,39.499126041,rectangular_8x9_1-24-1_0.txt,CoTenGra
+29.0,26.0,7.551981792,rectangular_8x9_1-24-1_0.txt,EinExprs (KaHyPar)
+28.0,25.0,0.465611084,rectangular_8x9_1-24-1_0.txt,EinExprs (METIS)
+46.0,38.0,46.353958458,rectangular_8x9_1-32-1_0.txt,CoTenGra
+38.0,35.0,13.840073,rectangular_8x9_1-32-1_0.txt,EinExprs (KaHyPar)
+37.0,36.0,0.928637833,rectangular_8x9_1-32-1_0.txt,EinExprs (METIS)
+56.0,47.00000000000001,85.931834209,rectangular_8x9_1-40-1_0.txt,CoTenGra
+49.0,43.0,20.055585709,rectangular_8x9_1-40-1_0.txt,EinExprs (KaHyPar)
+47.0,43.0,1.529362458,rectangular_8x9_1-40-1_0.txt,EinExprs (METIS)
+15.0,12.0,13.54458775,rochester_53_10_0_pABC.txt,CoTenGra
+14.0,12.0,4.187031292,rochester_53_10_0_pABC.txt,EinExprs (KaHyPar)
+14.0,12.0,0.196628667,rochester_53_10_0_pABC.txt,EinExprs (METIS)
+19.0,15.0,14.253687833,rochester_53_12_0_pABC.txt,CoTenGra
+17.0,16.0,6.515125083,rochester_53_12_0_pABC.txt,EinExprs (KaHyPar)
+17.0,15.0,0.312061416,rochester_53_12_0_pABC.txt,EinExprs (METIS)
+27.0,19.0,10.281835833,rochester_53_16_0_pABC.txt,CoTenGra
+22.0,18.0,10.96862275,rochester_53_16_0_pABC.txt,EinExprs (KaHyPar)
+22.0,19.0,0.585089625,rochester_53_16_0_pABC.txt,EinExprs (METIS)
+31.0,25.0,28.606043292,rochester_53_20_0_pABC.txt,CoTenGra
+27.0,24.0,16.519709209,rochester_53_20_0_pABC.txt,EinExprs (KaHyPar)
+27.0,24.0,0.906135083,rochester_53_20_0_pABC.txt,EinExprs (METIS)
+5.0,4.0,2.387580458,rochester_53_4_0_pABC.txt,CoTenGra
+5.0,5.0,0.005063166,rochester_53_4_0_pABC.txt,EinExprs (KaHyPar)
+5.0,5.0,0.001566667,rochester_53_4_0_pABC.txt,EinExprs (METIS)
+11.0,9.0,7.155019833,rochester_53_8_0_pABC.txt,CoTenGra
+11.0,9.0,2.500791125,rochester_53_8_0_pABC.txt,EinExprs (KaHyPar)
+11.0,10.0,0.101941959,rochester_53_8_0_pABC.txt,EinExprs (METIS)
+39.0,28.0,32.225478208,sycamore_53_10_0.txt,CoTenGra
+33.0,27.0,8.601136166,sycamore_53_10_0.txt,EinExprs (KaHyPar)
+33.0,33.0,1.098625625,sycamore_53_10_0.txt,EinExprs (METIS)
+49.0,36.0,37.323620917,sycamore_53_12_0.txt,CoTenGra
+45.0,44.0,13.308456208,sycamore_53_12_0.txt,EinExprs (KaHyPar)
+45.0,39.0,1.357665416,sycamore_53_12_0.txt,EinExprs (METIS)
+54.0,45.0,106.926108542,sycamore_53_14_0.txt,CoTenGra
+51.0,51.0,16.439365417,sycamore_53_14_0.txt,EinExprs (KaHyPar)
+49.0,39.0,1.736898958,sycamore_53_14_0.txt,EinExprs (METIS)
+63.0,51.00000000000001,73.128913292,sycamore_53_16_0.txt,CoTenGra
+62.0,62.0,21.035349,sycamore_53_16_0.txt,EinExprs (KaHyPar)
+61.0,54.0,2.690322709,sycamore_53_16_0.txt,EinExprs (METIS)
+63.0,53.0,134.096999583,sycamore_53_18_0.txt,CoTenGra
+66.0,53.0,24.254499958,sycamore_53_18_0.txt,EinExprs (KaHyPar)
+63.0,58.0,3.044159125,sycamore_53_18_0.txt,EinExprs (METIS)
+70.0,55.00000000000001,89.567398041,sycamore_53_20_0.txt,CoTenGra
+68.0,64.0,28.077388459,sycamore_53_20_0.txt,EinExprs (KaHyPar)
+65.0,60.0,3.912312208,sycamore_53_20_0.txt,EinExprs (METIS)
+14.0,10.0,7.021059375,sycamore_53_4_0.txt,CoTenGra
+13.0,10.0,0.017423208,sycamore_53_4_0.txt,EinExprs (KaHyPar)
+13.0,10.0,0.014907666,sycamore_53_4_0.txt,EinExprs (METIS)
+16.0,12.0,15.299082125,sycamore_53_5_0.txt,CoTenGra
+16.0,15.0,1.263894084,sycamore_53_5_0.txt,EinExprs (KaHyPar)
+15.0,13.0,0.09525275,sycamore_53_5_0.txt,EinExprs (METIS)
+17.0,13.0,22.738552166,sycamore_53_6_0.txt,CoTenGra
+17.0,13.0,2.746559375,sycamore_53_6_0.txt,EinExprs (KaHyPar)
+16.0,13.0,0.171400833,sycamore_53_6_0.txt,EinExprs (METIS)
+31.0,24.0,25.900284291,sycamore_53_8_0.txt,CoTenGra
+29.0,27.0,6.144491416,sycamore_53_8_0.txt,EinExprs (KaHyPar)
+30.0,24.0,0.508283917,sycamore_53_8_0.txt,EinExprs (METIS)
