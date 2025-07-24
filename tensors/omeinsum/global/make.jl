@@ -84,9 +84,9 @@ function run()
             for (label, (T, f)) in zip(LABELS, PAIRS)
                 any(dataframe.label .== label .&& dataframe.file .== file) && continue
                 network = make(T, query, matrix, weights)
-                tc = sc = time = -1.0
+                tc = sc = time = typemax(Float64)
 
-                try                
+                try
                     optimizer = f()
                     result = solve(network, optimizer)
                     tc = timecomplexity(result)
@@ -140,7 +140,7 @@ function plot()
     tcg3 = trunc(Int, sum(tc3 .> tc1) / n * 100.0)
     tcl3 = trunc(Int, sum(tc3 .< tc1) / n * 100.0)
 
-    axis = Axis(figure[1, 1]; xscale = log2, yscale = log2, title = "time complexity", xlabel = "CliqueTrees + KaHyPar", ylabel = "CoTenGra")
+    axis = Axis(figure[1, 1]; xscale = log2, yscale = log2, title = "time complexity", xlabel = LABELS[2], ylabel = LABELS[1])
     xlims!(axis, 2.0^10, 2.0^60)
     ylims!(axis, 2.0^10, 2.0^60)
     scatter!(axis, tc2, tc1; color = :red)
@@ -148,7 +148,7 @@ function plot()
     text!(2.0^50, 2.0^20; text = "$tcg2%", color = :black, align = (:center, :center))
     text!(2.0^20, 2.0^50; text = "$tcl2%", color = :black, align = (:center, :center))
 
-    axis = Axis(figure[1, 2]; xscale = log2, yscale = log2, title = "time complexity", xlabel = "CliqueTrees + METIS")
+    axis = Axis(figure[1, 2]; xscale = log2, yscale = log2, title = "time complexity", xlabel = LABELS[3])
     xlims!(axis, 2.0^10, 2.0^60)
     ylims!(axis, 2.0^10, 2.0^60)
     scatter!(axis, tc3, tc1; color = :blue)
@@ -165,7 +165,7 @@ function plot()
     scg3 = trunc(Int, sum(sc3 .> sc1) / n * 100.0)
     scl3 = trunc(Int, sum(sc3 .< sc1) / n * 100.0)
 
-    axis = Axis(figure[2, 1]; xscale = log2, yscale = log2, title = "space complexity", xlabel = "CliqueTrees + KaHyPar", ylabel = "CoTenGra")
+    axis = Axis(figure[2, 1]; xscale = log2, yscale = log2, title = "space complexity", xlabel = LABELS[2], ylabel = LABELS[1])
     xlims!(axis, 2.0^10, 2.0^60)
     ylims!(axis, 2.0^10, 2.0^60)
     scatter!(axis, sc2, sc1; color = :red)
@@ -173,7 +173,7 @@ function plot()
     text!(2.0^50, 2.0^20; text = "$scg2%", color = :black, align = (:center, :center))
     text!(2.0^20, 2.0^50; text = "$scl2%", color = :black, align = (:center, :center))
 
-    axis = Axis(figure[2, 2]; xscale = log2, yscale = log2, title = "space complexity", xlabel = "CliqueTrees + METIS")
+    axis = Axis(figure[2, 2]; xscale = log2, yscale = log2, title = "space complexity", xlabel = LABELS[3])
     xlims!(axis, 2.0^10, 2.0^60)
     ylims!(axis, 2.0^10, 2.0^60)
     scatter!(axis, sc3, sc1; color = :blue)
@@ -190,7 +190,7 @@ function plot()
     timeg3 = trunc(Int, sum(time3 .> time1) / n * 100.0)
     timel3 = trunc(Int, sum(time3 .< time1) / n * 100.0)
 
-    axis = Axis(figure[3, 1]; xscale = log2, yscale = log2, title = "running time", xlabel = "CliqueTrees + KaHyPar", ylabel = "CoTenGra")
+    axis = Axis(figure[3, 1]; xscale = log2, yscale = log2, title = "running time", xlabel = LABELS[2], ylabel = LABELS[1])
     xlims!(axis, 2.0^-4, 2.0^10)
     ylims!(axis, 2.0^-4, 2.0^10)
     scatter!(axis, time2, time1; color = :red)
@@ -198,7 +198,7 @@ function plot()
     text!(2.0^7, 2.0^-1; text = "$timeg2%", color = :black, align = (:center, :center))
     text!(2.0^-1, 2.0^7; text = "$timel2%", color = :black, align = (:center, :center))
 
-    axis = Axis(figure[3, 2]; xscale = log2, yscale = log2, title = "running time", xlabel = "CliqueTrees + METIS")
+    axis = Axis(figure[3, 2]; xscale = log2, yscale = log2, title = "running time", xlabel = LABELS[3])
     xlims!(axis, 2.0^-4, 2.0^10)
     ylims!(axis, 2.0^-4, 2.0^10)
     scatter!(axis, time3, time1; color = :blue)
@@ -216,7 +216,7 @@ function plot()
 
     axis = Axis(figure[1, 1]; xscale = log2, title = "time complexity", xlabel = "performance ratio", ylabel = "problems solved")
     xlims!(axis, 1.0, 2.0^12)
-    ylims!(axis, 0.0, 1.1)
+    ylims!(axis, 0.0, 1.0)
 
     (xtc1, xtc2, xtc3), (ytc1, ytc2, ytc3) = profile([tc1 tc2 tc3])
 
@@ -226,7 +226,7 @@ function plot()
 
     axis = Axis(figure[2, 1]; xscale = log2, title = "space complexity", xlabel = "performance ratio", ylabel = "problems solved")
     xlims!(axis, 1.0, 2.0^12)
-    ylims!(axis, 0.0, 1.1)
+    ylims!(axis, 0.0, 1.0)
 
     (xsc1, xsc2, xsc3), (ysc1, ysc2, ysc3) = profile([sc1 sc2 sc3]) 
 
@@ -236,7 +236,7 @@ function plot()
 
     axis = Axis(figure[3, 1]; xscale = log2, title = "running time", xlabel = "performance ratio", ylabel = "problems solved")
     xlims!(axis, 1.0, 2.0^6)
-    ylims!(axis, 0.0, 1.1) 
+    ylims!(axis, 0.0, 1.0) 
 
     (xtime1, xtime2, xtime3), (ytime1, ytime2, ytime3) = profile([time1 time2 time3])
 
@@ -247,7 +247,7 @@ function plot()
     Legend(
         figure[1, 2],
         [plot1, plot2, plot3],
-        ["CoTenGra", "CliqueTrees + KaHyPar", "CliqueTrees + METIS"],
+        collect(LABELS),
     )
 
     save("profile.png", figure)
