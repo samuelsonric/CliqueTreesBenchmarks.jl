@@ -28,6 +28,7 @@ const EXCLUDE = (
     "mc_2023_arjun_117.json",
     "mc_rw_32.sk_4_38.json",
     "mc_rw_c7552.isc.json",
+    "wmc_2021_061.json",
     "wmc_2021_145.json",
     "wmc_2023_141.json",
     "wmc_2023_152.json",
@@ -141,20 +142,20 @@ function plot()
     tcl3 = trunc(Int, sum(tc3 .< tc1) / n * 100.0)
 
     axis = Axis(figure[1, 1]; xscale = log2, yscale = log2, title = "time complexity", xlabel = LABELS[2], ylabel = LABELS[1])
-    xlims!(axis, 2.0^10, 2.0^60)
-    ylims!(axis, 2.0^10, 2.0^60)
+    xlims!(axis, 2.0^10, 2.0^70)
+    ylims!(axis, 2.0^10, 2.0^70)
     scatter!(axis, tc2, tc1; color = :red)
-    lines!(axis, [2.0^10, 2.0^60], [2.0^10, 2.0^60]; color = :black)
-    text!(2.0^50, 2.0^20; text = "$tcg2%", color = :black, align = (:center, :center))
-    text!(2.0^20, 2.0^50; text = "$tcl2%", color = :black, align = (:center, :center))
+    lines!(axis, [2.0^10, 2.0^70], [2.0^10, 2.0^70]; color = :black)
+    text!(2.0^60, 2.0^20; text = "$tcg2%", color = :black, align = (:center, :center))
+    text!(2.0^20, 2.0^60; text = "$tcl2%", color = :black, align = (:center, :center))
 
     axis = Axis(figure[1, 2]; xscale = log2, yscale = log2, title = "time complexity", xlabel = LABELS[3])
-    xlims!(axis, 2.0^10, 2.0^60)
-    ylims!(axis, 2.0^10, 2.0^60)
+    xlims!(axis, 2.0^10, 2.0^70)
+    ylims!(axis, 2.0^10, 2.0^70)
     scatter!(axis, tc3, tc1; color = :blue)
-    lines!(axis, [2.0^10, 2.0^60], [2.0^10, 2.0^60]; color = :black)
-    text!(2.0^50, 2.0^20; text = "$tcg3%", color = :black, align = (:center, :center))
-    text!(2.0^20, 2.0^50; text = "$tcl3%", color = :black, align = (:center, :center))
+    lines!(axis, [2.0^10, 2.0^70], [2.0^10, 2.0^70]; color = :black)
+    text!(2.0^60, 2.0^20; text = "$tcg3%", color = :black, align = (:center, :center))
+    text!(2.0^20, 2.0^60; text = "$tcl3%", color = :black, align = (:center, :center))
 
     sc1 = 2 .^ dataframe.sc[dataframe.label .== LABELS[1]]
     sc2 = 2 .^ dataframe.sc[dataframe.label .== LABELS[2]]
@@ -191,20 +192,20 @@ function plot()
     timel3 = trunc(Int, sum(time3 .< time1) / n * 100.0)
 
     axis = Axis(figure[3, 1]; xscale = log2, yscale = log2, title = "running time", xlabel = LABELS[2], ylabel = LABELS[1])
-    xlims!(axis, 2.0^-4, 2.0^10)
-    ylims!(axis, 2.0^-4, 2.0^10)
+    xlims!(axis, 2.0^-5, 2.0^10)
+    ylims!(axis, 2.0^-5, 2.0^10)
     scatter!(axis, time2, time1; color = :red)
-    lines!(axis, [2.0^-4, 2.0^10], [2.0^-4, 2.0^10]; color = :black)
-    text!(2.0^7, 2.0^-1; text = "$timeg2%", color = :black, align = (:center, :center))
-    text!(2.0^-1, 2.0^7; text = "$timel2%", color = :black, align = (:center, :center))
+    lines!(axis, [2.0^-5, 2.0^10], [2.0^-5, 2.0^10]; color = :black)
+    text!(2.0^7, 2.0^-2; text = "$timeg2%", color = :black, align = (:center, :center))
+    text!(2.0^-2, 2.0^7; text = "$timel2%", color = :black, align = (:center, :center))
 
     axis = Axis(figure[3, 2]; xscale = log2, yscale = log2, title = "running time", xlabel = LABELS[3])
-    xlims!(axis, 2.0^-4, 2.0^10)
-    ylims!(axis, 2.0^-4, 2.0^10)
+    xlims!(axis, 2.0^-5, 2.0^10)
+    ylims!(axis, 2.0^-5, 2.0^10)
     scatter!(axis, time3, time1; color = :blue)
-    lines!(axis, [2.0^-4, 2.0^10], [2.0^-4, 2.0^10]; color = :black)
-    text!(2.0^7, 2.0^-1; text = "$timeg3%", color = :black, align = (:center, :center))
-    text!(2.0^-1, 2.0^7; text = "$timel3%", color = :black, align = (:center, :center))
+    lines!(axis, [2.0^-5, 2.0^10], [2.0^-5, 2.0^10]; color = :black)
+    text!(2.0^7, 2.0^-2; text = "$timeg3%", color = :black, align = (:center, :center))
+    text!(2.0^-2, 2.0^7; text = "$timel3%", color = :black, align = (:center, :center))
 
     save("raw.png", figure)
 

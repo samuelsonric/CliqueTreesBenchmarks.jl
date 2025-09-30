@@ -1,15 +1,17 @@
 [dependencies]
 cytoolz = "==1.0.1"
 openssl = ">=3, <3.6"
+jupyter_kernel_test = "*"
 tqdm = "==4.67.1"
 uv = ">=0.4"
+jupyter_client = "*"
 cotengra = "==0.7.4"
 optuna = "==4.3.0"
 
     [dependencies.python]
     channel = "conda-forge"
-    build = "*cpython*"
-    version = ">=3.8,<4"
+    build = "*cp*"
+    version = ">=3.9,<4"
 
 [project]
 name = ".CondaPkg"
