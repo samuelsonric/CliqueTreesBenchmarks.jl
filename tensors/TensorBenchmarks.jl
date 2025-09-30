@@ -166,33 +166,46 @@ function make(::Type{SizedEinExpr}, query, matrix, weights)
 end
 
 function make(::Type{Tuple{Py, Py, Py}}, query, matrix, weights)
-    inputs = Py[]; outputs = Char[]; size_dict = Dict{Char, Int}()
+    inputs = pylist(); outputs = pylist(); size_dict = pydict()
 
     for j in axes(matrix, 2)
         pstart = matrix.colptr[j]
         pstop = matrix.colptr[j + 1] - 1
-        input = Char[]
+        input = pylist()
 
         for p in pstart:pstop
             i = matrix.rowval[p]
-            c = Char(i)
-            push!(input, c)
+            
+            if 55296 <= i 
+                i += 2048
+            end
+
+            c = pybuiltins.chr(pyint(i))
+            input.append(c)
         end
 
-        push!(inputs, pylist(input))
+        inputs.append(input)
     end
 
     for i in query
-        c = Char(i)
-        push!(outputs, c)
+        if 55296 <= i   
+            i += 2048
+        end
+        
+        c = pybuiltins.chr(pyint(i))
+        outputs.append(c)
     end
 
     for (i, v) in enumerate(weights)
-        c = Char(i)
-        size_dict[c] = v
+        if 55296 <= i
+            i += 2048
+        end
+        
+        c = pybuiltins.chr(pyint(i))
+        size_dict[c] = pyint(v)
     end
 
-    return pylist(inputs), pylist(outputs), pydict(size_dict)
+    return inputs, outputs, size_dict
 end
 
 function solve(network::Tuple{EinCode, Dict}, optimizer)

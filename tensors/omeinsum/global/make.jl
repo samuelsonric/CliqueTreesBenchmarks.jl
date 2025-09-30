@@ -16,25 +16,6 @@ using .TensorBenchmarks
 
 const CTG = pyimport("cotengra")
 
-const EXCLUDE = (
-    "mc_2020_017.json",
-    "mc_2020_062.json",
-    "mc_2020_082.json",
-    "mc_2022_087.json",
-    "mc_2022_167.json",
-    "mc_2023_002.json",
-    "mc_2023_151.json",
-    "mc_2023_188.json",
-    "mc_2023_arjun_117.json",
-    "mc_rw_32.sk_4_38.json",
-    "mc_rw_c7552.isc.json",
-    "wmc_2021_061.json",
-    "wmc_2021_145.json",
-    "wmc_2023_141.json",
-    "wmc_2023_152.json",
-    "qc_maxcut_n18_r17_p100.json",
-)
-
 const LABELS = (
     "CoTenGra",
     "OMEinsum (KaHyPar)",
@@ -76,8 +57,8 @@ function run()
 
     dir = joinpath("..", "..", "instances")
 
-    for file in readdir(dir)
-        if endswith(file, ".json") && file ∉ EXCLUDE
+    for file in ("gm_1fas.json", "mc_2020_017.json") # readdir(dir)
+        if endswith(file, ".json")
             path = joinpath(@__DIR__, dir, file)
             query, matrix, weights = TensorBenchmarks.read(path)
             any(weights .< 2) && continue
