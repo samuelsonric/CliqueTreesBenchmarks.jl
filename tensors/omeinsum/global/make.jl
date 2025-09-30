@@ -57,7 +57,7 @@ function run()
 
     dir = joinpath("..", "..", "instances")
 
-    for file in ("gm_1fas.json", "mc_2020_017.json") # readdir(dir)
+    for file in readdir(dir)
         if endswith(file, ".json")
             path = joinpath(@__DIR__, dir, file)
             query, matrix, weights = TensorBenchmarks.read(path)
