@@ -2,4 +2,5 @@
 *.swp
 table.csv
 .DS_Store
+.CondaPkg
 Manifest.toml
