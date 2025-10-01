@@ -210,7 +210,7 @@ end
 
 function solve(network::Tuple{EinCode, Dict}, optimizer)
     code, size = network
-    optcode = optimize_code(code, size, optimizer, MergeVectors())
+    optcode = optimize_code(code, size, optimizer)
     return (optcode, size)
 end
 
