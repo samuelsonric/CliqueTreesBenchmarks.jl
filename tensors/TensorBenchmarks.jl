@@ -8,7 +8,7 @@ using OMEinsumContractionOrders
 using PythonCall
 using SparseArrays
 
-using OMEinsumContractionOrders: NestedEinsum, EinCode, LeafString
+using OMEinsumContractionOrders: NestedEinsum, EinCode, LeafString, optimize_hyper_nd
 
 export printrow, profile, read, make, solve, timecomplexity, spacecomplexity
 
