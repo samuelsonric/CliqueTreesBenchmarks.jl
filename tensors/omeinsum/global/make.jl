@@ -23,7 +23,7 @@ const LABELS = (
 )
 
 const PAIRS = (
-    (Tuple{Py, Py, Py},    () -> CTG.HyperOptimizer(; reconf_opts=pydict(), max_time="rate:1e9")),
+    (Tuple{Py, Py, Py},    () -> CTG.HyperOptimizer(; reconf_opts=pydict(), max_time="rate:1e9", on_trial_error="ignore")),
     (Tuple{EinCode, Dict}, () -> HyperND(; dis = KaHyParND(), width = 50, imbalances = 100:10:800)),
     (Tuple{EinCode, Dict}, () -> HyperND(; dis = METISND(),   width = 50, imbalances = 100:10:800)),
 )
