@@ -210,7 +210,7 @@ end
 
 function solve(network::Tuple{EinCode, Dict}, optimizer)
     code, size = network
-    optcode = optimize_code(code, size, optimizer)
+    optcode = optimize_hyper_nd(optimizer, code, size; binary=false)
     return (optcode, size)
 end
 
