@@ -57,9 +57,9 @@ function run()
 
     dir = joinpath("..", "..", "instances")
 
-    for file in readdir(dir)
+    for file in sort(readdir(dir); by=file -> filesize(joinpath(abspath(dir), file)))
         if endswith(file, ".json")
-            path = joinpath(@__DIR__, dir, file)
+            path = joinpath(abspath(dir), file)
             query, matrix, weights = TensorBenchmarks.read(path)
             any(weights .< 2) && continue
              
