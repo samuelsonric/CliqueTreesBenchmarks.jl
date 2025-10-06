@@ -1,0 +1,436 @@
+tc,sc,time,file,label
+33.219699356318486,25.3594000115385,1.965263788,str_nw_mera_open_26.json,CoTenGra
+34.34523023840234,25.359400011538497,0.028288659,str_nw_mera_open_26.json,OMEinsum (KaHyPar)
+34.34523023840234,25.359400011538497,0.01522758,str_nw_mera_open_26.json,OMEinsum (METIS)
+30.2240016741981,22.224001674198107,3.138096099,lm_batch_likelihood_brackets_3_16d.json,CoTenGra
+30.2240016741981,22.224001674198107,0.513399579,lm_batch_likelihood_brackets_3_16d.json,OMEinsum (KaHyPar)
+30.2240016741981,22.224001674198107,0.018737044,lm_batch_likelihood_brackets_3_16d.json,OMEinsum (METIS)
+28.028100312017802,20.85817531057549,3.197453461,lm_batch_likelihood_sentence_3_12d.json,CoTenGra
+28.028100312017806,20.85817531057549,0.36377146,lm_batch_likelihood_sentence_3_12d.json,OMEinsum (KaHyPar)
+28.028100312017806,20.85817531057549,0.068636158,lm_batch_likelihood_sentence_3_12d.json,OMEinsum (METIS)
+29.0,28.0,1.028817,str_nw_ftps_open_28.json,CoTenGra
+29.0,28.0,0.029820656,str_nw_ftps_open_28.json,OMEinsum (KaHyPar)
+29.0,28.0,0.028517675,str_nw_ftps_open_28.json,OMEinsum (METIS)
+31.0,30.0,1.950819219,str_nw_ftps_open_30.json,CoTenGra
+31.0,30.0,0.031479159,str_nw_ftps_open_30.json,OMEinsum (KaHyPar)
+31.0,30.0,0.029599173,str_nw_ftps_open_30.json,OMEinsum (METIS)
+33.0,32.0,2.056956968,str_nw_ftps_open_32.json,CoTenGra
+33.0,32.0,0.044194404,str_nw_ftps_open_32.json,OMEinsum (KaHyPar)
+33.0,32.0,0.042797648,str_nw_ftps_open_32.json,OMEinsum (METIS)
+37.16992500144232,32.584962500721154,3.582920845,str_nw_peps_open_30.json,CoTenGra
+39.16992500144231,30.0,0.844119506,str_nw_peps_open_30.json,OMEinsum (KaHyPar)
+39.16992500144231,30.0,0.122893418,str_nw_peps_open_30.json,OMEinsum (METIS)
+35.23044679115249,31.15363119410166,9.493406445,str_ctg_regular_01.json,CoTenGra
+39.060521789710194,29.73859369482281,1.009766303,str_ctg_regular_01.json,OMEinsum (KaHyPar)
+38.81540929187365,30.41666559993545,0.148384332,str_ctg_regular_01.json,OMEinsum (METIS)
+40.0,29.614709844115207,9.205743144,lm_first_last_brackets_4_16d.json,CoTenGra
+40.0,32.0,0.820480106,lm_first_last_brackets_4_16d.json,OMEinsum (KaHyPar)
+40.0,32.0,0.084160932,lm_first_last_brackets_4_16d.json,OMEinsum (METIS)
+38.07354922057605,26.65148445440323,11.594675527,lm_first_last_sentence_4_14c.json,CoTenGra
+38.07354922057605,30.458839376460837,0.823155043,lm_first_last_sentence_4_14c.json,OMEinsum (KaHyPar)
+38.07354922057605,30.110916073040528,0.083723565,lm_first_last_sentence_4_14c.json,OMEinsum (METIS)
+40.0,30.918863237274593,8.644338786,lm_first_last_sentence_4_16c.json,CoTenGra
+40.0,32.0,0.824615271,lm_first_last_sentence_4_16c.json,OMEinsum (KaHyPar)
+40.0,32.0,0.084895506,lm_first_last_sentence_4_16c.json,OMEinsum (METIS)
+40.0,30.918863237274593,8.855687959,lm_first_last_sentence_4_16d.json,CoTenGra
+40.0,32.0,0.827795753,lm_first_last_sentence_4_16d.json,OMEinsum (KaHyPar)
+40.0,32.0,0.08419146,lm_first_last_sentence_4_16d.json,OMEinsum (METIS)
+41.69925001442312,31.938413245928473,8.174081168,lm_first_last_sentence_4_18c.json,CoTenGra
+41.699250014423136,33.3594000115385,0.829895285,lm_first_last_sentence_4_18c.json,OMEinsum (KaHyPar)
+41.699250014423136,33.3594000115385,0.08481754,lm_first_last_sentence_4_18c.json,OMEinsum (METIS)
+43.21928094887362,32.85043180659877,9.073083276,lm_first_last_sentence_4_20c.json,CoTenGra
+43.21928094887362,34.5754247590989,0.825235039,lm_first_last_sentence_4_20c.json,OMEinsum (KaHyPar)
+43.21928094887362,34.5754247590989,0.083393431,lm_first_last_sentence_4_20c.json,OMEinsum (METIS)
+43.21928094887362,32.85043180659877,9.486241976,lm_first_last_sentence_4_20d.json,CoTenGra
+43.21928094887362,34.5754247590989,0.822136385,lm_first_last_sentence_4_20d.json,OMEinsum (KaHyPar)
+43.21928094887362,34.5754247590989,0.082374974,lm_first_last_sentence_4_20d.json,OMEinsum (METIS)
+30.11428751370196,28.529325012980813,66.333130224,gm_queen5_5_3.wcsp.json,CoTenGra
+30.11428751370196,26.944362512259644,1.525410269,gm_queen5_5_3.wcsp.json,OMEinsum (KaHyPar)
+30.11428751370196,26.944362512259644,1.24863743,gm_queen5_5_3.wcsp.json,OMEinsum (METIS)
+38.0,34.0,175.653303825,gm_queen5_5_4_wcsp.json,CoTenGra
+38.0,34.0,0.018742942,gm_queen5_5_4_wcsp.json,OMEinsum (KaHyPar)
+38.0,34.0,0.015458135,gm_queen5_5_4_wcsp.json,OMEinsum (METIS)
+32.45763738099176,28.042599881712917,19.695299208,rnd_oe_01.json,CoTenGra
+34.62756238243408,27.04259988171291,2.518131148,rnd_oe_01.json,OMEinsum (KaHyPar)
+34.62756238243407,26.04259988171291,0.183696769,rnd_oe_01.json,OMEinsum (METIS)
+34.86917501586544,28.529325012980813,40.225720275,gm_1fas.json,CoTenGra
+34.86917501586544,28.52932501298081,1.722486553,gm_1fas.json,OMEinsum (KaHyPar)
+34.86917501586544,28.52932501298081,1.323679924,gm_1fas.json,OMEinsum (METIS)
+22.962896005337257,18.96289600533726,31.792930463,lm_batch_likelihood_brackets_4_4d.json,CoTenGra
+25.770250927394862,20.96289600533726,0.658002848,lm_batch_likelihood_brackets_4_4d.json,OMEinsum (KaHyPar)
+25.770250927394862,20.96289600533726,0.062644104,lm_batch_likelihood_brackets_4_4d.json,OMEinsum (METIS)
+22.22420604183398,17.263195831184003,14.512221332,str_matrix_chain_multiplication_100.json,CoTenGra
+22.22420604183398,17.831888619055213,0.851820767,str_matrix_chain_multiplication_100.json,OMEinsum (KaHyPar)
+22.22420604183398,17.831888619055213,0.065466558,str_matrix_chain_multiplication_100.json,OMEinsum (METIS)
+24.891783703218312,18.89178370321831,12.381709233,lm_batch_likelihood_sentence_4_4d.json,CoTenGra
+24.891783703218312,18.89178370321831,0.667470972,lm_batch_likelihood_sentence_4_4d.json,OMEinsum (KaHyPar)
+24.891783703218312,18.89178370321831,0.06182926,lm_batch_likelihood_sentence_4_4d.json,OMEinsum (METIS)
+28.89178370321832,22.89178370321831,16.805793096,lm_batch_likelihood_sentence_4_8d.json,CoTenGra
+31.89178370321831,25.89178370321831,0.674412105,lm_batch_likelihood_sentence_4_8d.json,OMEinsum (KaHyPar)
+31.89178370321831,25.89178370321831,0.063074625,lm_batch_likelihood_sentence_4_8d.json,OMEinsum (METIS)
+32.472671009664204,25.302746008221888,30.479390425,lm_batch_likelihood_brackets_4_12d.json,CoTenGra
+36.05763351038534,32.4726710096642,0.689654887,lm_batch_likelihood_brackets_4_12d.json,OMEinsum (KaHyPar)
+36.05763351038534,32.4726710096642,0.064583788,lm_batch_likelihood_brackets_4_12d.json,OMEinsum (METIS)
+34.96289600533725,26.962896005337264,28.806749354,lm_batch_likelihood_brackets_4_16d.json,CoTenGra
+38.96289600533726,30.96289600533726,0.69435743,lm_batch_likelihood_brackets_4_16d.json,OMEinsum (KaHyPar)
+38.96289600533726,30.96289600533726,0.067650056,lm_batch_likelihood_brackets_4_16d.json,OMEinsum (METIS)
+32.40155870754525,25.231633706102933,28.000887264,lm_batch_likelihood_sentence_4_12d.json,CoTenGra
+35.9865212082664,28.816596206824087,0.685970714,lm_batch_likelihood_sentence_4_12d.json,OMEinsum (KaHyPar)
+35.9865212082664,28.816596206824087,0.066903257,lm_batch_likelihood_sentence_4_12d.json,OMEinsum (METIS)
+33.73591323556394,26.12120339144873,27.578355481,lm_batch_likelihood_sentence_4_14c.json,CoTenGra
+37.54326815762155,29.92855831350633,0.687296878,lm_batch_likelihood_sentence_4_14c.json,OMEinsum (KaHyPar)
+37.54326815762155,29.92855831350633,0.066464346,lm_batch_likelihood_sentence_4_14c.json,OMEinsum (METIS)
+34.89178370321831,26.891783703218312,27.968235918,lm_batch_likelihood_sentence_4_16c.json,CoTenGra
+38.891783703218316,30.89178370321831,0.675163781,lm_batch_likelihood_sentence_4_16c.json,OMEinsum (KaHyPar)
+38.891783703218316,30.89178370321831,0.067103634,lm_batch_likelihood_sentence_4_16c.json,OMEinsum (METIS)
+34.89178370321831,26.891783703218312,28.20777068,lm_batch_likelihood_sentence_4_16d.json,CoTenGra
+38.891783703218316,30.89178370321831,0.675118115,lm_batch_likelihood_sentence_4_16d.json,OMEinsum (KaHyPar)
+38.891783703218316,30.89178370321831,0.067047374,lm_batch_likelihood_sentence_4_16d.json,OMEinsum (METIS)
+35.91133371187218,27.57148370898756,26.804013639,lm_batch_likelihood_sentence_4_18c.json,CoTenGra
+40.0812587133145,31.741408710429873,0.671874481,lm_batch_likelihood_sentence_4_18c.json,OMEinsum (KaHyPar)
+40.0812587133145,31.741408710429873,0.067120747,lm_batch_likelihood_sentence_4_18c.json,OMEinsum (METIS)
+36.82335227254249,28.179496082767763,26.241561605,lm_batch_likelihood_sentence_4_20c.json,CoTenGra
+41.145280367429855,32.501424177655124,0.669510046,lm_batch_likelihood_sentence_4_20c.json,OMEinsum (KaHyPar)
+41.145280367429855,32.501424177655124,0.067579936,lm_batch_likelihood_sentence_4_20c.json,OMEinsum (METIS)
+36.82335227254249,28.179496082767763,28.138199367,lm_batch_likelihood_sentence_4_20d.json,CoTenGra
+41.145280367429855,32.501424177655124,0.681152114,lm_batch_likelihood_sentence_4_20d.json,OMEinsum (KaHyPar)
+41.145280367429855,32.501424177655124,0.069911755,lm_batch_likelihood_sentence_4_20d.json,OMEinsum (METIS)
+37.727699053719526,30.335381630940766,16.862281261,rnd_oe_02.json,CoTenGra
+38.18337853749571,27.276487941887197,1.44174055,rnd_oe_02.json,OMEinsum (KaHyPar)
+38.18337853749571,27.29920801838728,0.143955541,rnd_oe_02.json,OMEinsum (METIS)
+34.2646625064904,30.679700005769252,48.856596756,rnd_mixed_01.json,CoTenGra
+35.84962500721158,30.264662506490396,3.469487274,rnd_mixed_01.json,OMEinsum (KaHyPar)
+35.84962500721156,30.264662506490396,0.235833984,rnd_mixed_01.json,OMEinsum (METIS)
+34.153631194101656,31.56866869338051,71.216637865,rnd_mixed_02.json,CoTenGra
+36.21252488315524,32.212524883155226,3.94913505,rnd_mixed_02.json,OMEinsum (KaHyPar)
+36.21252488315523,33.153631194101656,0.238979892,rnd_mixed_02.json,OMEinsum (METIS)
+31.529325012980813,27.3594000115385,52.453316421,gm_1kp6.json,CoTenGra
+34.28421251514429,26.359400011538494,2.558023414,gm_1kp6.json,OMEinsum (KaHyPar)
+34.28421251514429,26.359400011538494,2.011274327,gm_1kp6.json,OMEinsum (METIS)
+33.28421251514431,31.699250014423125,85.864726858,gm_myciel5g_3_wcsp.json,CoTenGra
+33.2842125151443,31.699250014423107,2.87056189,gm_myciel5g_3_wcsp.json,OMEinsum (KaHyPar)
+33.2842125151443,31.699250014423107,2.661691581,gm_myciel5g_3_wcsp.json,OMEinsum (METIS)
+33.84962500721157,31.264662506490406,54.98930531,str_ctg_regular_02.json,CoTenGra
+38.26466250649042,32.094737505048094,3.117411991,str_ctg_regular_02.json,OMEinsum (KaHyPar)
+37.84962500721157,31.264662506490396,0.27999134,str_ctg_regular_02.json,OMEinsum (METIS)
+34.0,32.0,Inf,gm_BN_13.json,CoTenGra
+35.0,32.0,9.475632638,gm_BN_13.json,OMEinsum (KaHyPar)
+36.0,33.0,0.884706558,gm_BN_13.json,OMEinsum (METIS)
+33.54876363248749,25.015090360463176,23.14925061,str_nw_mera_closed_120.json,CoTenGra
+33.54876363248749,24.90851869626513,1.74393945,str_nw_mera_closed_120.json,OMEinsum (KaHyPar)
+33.54876363248749,24.90851869626513,0.162271124,str_nw_mera_closed_120.json,OMEinsum (METIS)
+35.0,32.0,114.49225112,wmc_2022_082.json,CoTenGra
+33.0,32.0,14.003423533,wmc_2022_082.json,OMEinsum (KaHyPar)
+33.0,32.0,0.405371159,wmc_2022_082.json,OMEinsum (METIS)
+33.0,29.000000000000004,65.382349172,qc_variational_29.json,CoTenGra
+32.0,29.0,1.7412213,qc_variational_29.json,OMEinsum (KaHyPar)
+32.0,29.0,0.155687556,qc_variational_29.json,OMEinsum (METIS)
+34.64548429043133,31.06052178971018,85.402493043,rnd_mixed_03.json,CoTenGra
+36.96741238531871,33.382449884597534,4.619449935,rnd_mixed_03.json,OMEinsum (KaHyPar)
+37.90851869626513,29.831703099214295,0.330063702,rnd_mixed_03.json,OMEinsum (METIS)
+28.0,27.0,88.144160074,qc_qft_27.json,CoTenGra
+28.0,27.0,2.535849566,qc_qft_27.json,OMEinsum (KaHyPar)
+28.0,27.0,2.32391817,qc_qft_27.json,OMEinsum (METIS)
+34.73859369482282,30.416665599935456,119.820673083,str_ctg_regular_03.json,CoTenGra
+38.171553102098926,34.17155310209891,5.502837036,str_ctg_regular_03.json,OMEinsum (KaHyPar)
+39.90851869626513,31.41666559993545,0.407381186,str_ctg_regular_03.json,OMEinsum (METIS)
+34.0,30.0,38.29796583,qc_variational_30.json,CoTenGra
+33.0,30.0,6.099733122,qc_variational_30.json,OMEinsum (KaHyPar)
+33.0,30.0,0.339089615,qc_variational_30.json,OMEinsum (METIS)
+35.89059678826788,31.305634287546713,85.019612589,rnd_mixed_04.json,CoTenGra
+37.21252488315524,30.457637380991763,7.251074327,rnd_mixed_04.json,OMEinsum (KaHyPar)
+38.908518696265126,31.831703099214295,0.61989576,rnd_mixed_04.json,OMEinsum (METIS)
+34.0,31.000000000000004,32.127304264,qc_variational_31.json,CoTenGra
+35.0,31.0,8.11966668,qc_variational_31.json,OMEinsum (KaHyPar)
+34.0,31.0,0.729385842,qc_variational_31.json,OMEinsum (METIS)
+29.0,29.000000000000004,123.712975497,qc_qft_28.json,CoTenGra
+29.0,28.0,2.134566005,qc_qft_28.json,OMEinsum (KaHyPar)
+29.0,28.0,2.322202372,qc_qft_28.json,OMEinsum (METIS)
+27.0,24.0,141.42633048,mc_2021_027.json,CoTenGra
+26.0,24.0,18.471105485,mc_2021_027.json,OMEinsum (KaHyPar)
+26.0,24.0,0.665853782,mc_2021_027.json,OMEinsum (METIS)
+42.231978583180535,30.809913817007715,100.420571546,lm_batch_likelihood_sentence_5_14c.json,CoTenGra
+42.23197858318055,30.80991381700771,4.130290142,lm_batch_likelihood_sentence_5_14c.json,OMEinsum (KaHyPar)
+42.23197858318054,34.61726873906532,0.259231445,lm_batch_likelihood_sentence_5_14c.json,OMEinsum (METIS)
+43.77313920671969,31.773139206719694,86.080434129,lm_batch_likelihood_sentence_5_16c.json,CoTenGra
+43.77313920671969,35.77313920671969,4.018709027,lm_batch_likelihood_sentence_5_16c.json,OMEinsum (KaHyPar)
+43.77313920671969,31.77313920671969,0.255558468,lm_batch_likelihood_sentence_5_16c.json,OMEinsum (METIS)
+43.77313920671969,31.773139206719694,87.475782671,lm_batch_likelihood_sentence_5_16d.json,CoTenGra
+43.77313920671969,35.77313920671969,3.99259537,lm_batch_likelihood_sentence_5_16d.json,OMEinsum (KaHyPar)
+43.77313920671969,31.77313920671969,0.256142769,lm_batch_likelihood_sentence_5_16d.json,OMEinsum (METIS)
+45.13253921825819,32.622764213931255,81.281715917,lm_batch_likelihood_sentence_5_18c.json,CoTenGra
+45.132539218258216,36.792689215373564,3.956072803,lm_batch_likelihood_sentence_5_18c.json,OMEinsum (KaHyPar)
+45.13253921825824,32.62276421393125,0.254015744,lm_batch_likelihood_sentence_5_18c.json,OMEinsum (METIS)
+31.0,30.0,107.050835712,qc_qft_30.json,CoTenGra
+31.0,30.0,2.772208883,qc_qft_30.json,OMEinsum (KaHyPar)
+31.0,30.0,2.420495028,qc_qft_30.json,OMEinsum (METIS)
+32.0,31.000000000000004,162.80184056,mc_rw_or-70-20-4.json,CoTenGra
+32.0,29.0,19.651583236,mc_rw_or-70-20-4.json,OMEinsum (KaHyPar)
+32.0,29.0,1.29936247,mc_rw_or-70-20-4.json,OMEinsum (METIS)
+30.0,27.0,135.032233489,mc_2021_075.json,CoTenGra
+30.0,27.0,19.70742722,mc_2021_075.json,OMEinsum (KaHyPar)
+30.0,27.0,1.213009696,mc_2021_075.json,OMEinsum (METIS)
+33.0,31.000000000000004,145.883273968,mc_rw_or-70-5-6-UC-10.json,CoTenGra
+33.0,31.0,21.249904273,mc_rw_or-70-5-6-UC-10.json,OMEinsum (KaHyPar)
+33.0,31.0,0.687662956,mc_rw_or-70-5-6-UC-10.json,OMEinsum (METIS)
+29.0,26.0,123.915164847,mc_2021_065.json,CoTenGra
+29.0,26.0,7.629378294,mc_2021_065.json,OMEinsum (KaHyPar)
+29.0,26.0,0.540637987,mc_2021_065.json,OMEinsum (METIS)
+32.92481250360578,29.339850002884628,62.161009568,str_ctg_regular_04.json,CoTenGra
+37.92481250360578,30.339850002884624,7.555918564,str_ctg_regular_04.json,OMEinsum (KaHyPar)
+39.50977500432694,27.75488750216347,0.578379501,str_ctg_regular_04.json,OMEinsum (METIS)
+30.0,29.000000000000004,101.127856777,wmc_2021_183.json,CoTenGra
+30.0,28.0,14.3679995,wmc_2021_183.json,OMEinsum (KaHyPar)
+30.0,28.0,0.927010513,wmc_2021_183.json,OMEinsum (METIS)
+34.0,30.0,128.843608868,wmc_2022_051.json,CoTenGra
+36.0,32.0,25.684841237,wmc_2022_051.json,OMEinsum (KaHyPar)
+37.0,30.0,1.287367901,wmc_2022_051.json,OMEinsum (METIS)
+25.487565080661522,16.99171005377434,63.157338967,str_mps_varying_inner_product_200.json,CoTenGra
+19.73246722710292,15.484539713659336,10.757332712,str_mps_varying_inner_product_200.json,OMEinsum (KaHyPar)
+19.73246722710292,15.484539713659336,0.391735434,str_mps_varying_inner_product_200.json,OMEinsum (METIS)
+32.0,30.0,86.116862603,wmc_2022_004.json,CoTenGra
+32.0,29.0,22.259710514,wmc_2022_004.json,OMEinsum (KaHyPar)
+32.0,29.0,0.646474251,wmc_2022_004.json,OMEinsum (METIS)
+28.0,26.0,81.408436433,qc_maxcut_n28_r3_p3.json,CoTenGra
+31.0,24.0,6.773178329,qc_maxcut_n28_r3_p3.json,OMEinsum (KaHyPar)
+30.0,25.0,0.515931228,qc_maxcut_n28_r3_p3.json,OMEinsum (METIS)
+37.820456194639405,31.978660627252747,95.370390108,str_nw_mera_closed_247.json,CoTenGra
+40.18302627402408,29.727699053719526,5.371632775,str_nw_mera_closed_247.json,OMEinsum (KaHyPar)
+40.18302627402408,29.727699053719526,0.43893552,str_nw_mera_closed_247.json,OMEinsum (METIS)
+29.0,26.0,40.567340569,qc_circuit_n53_m12_s2_e8_pABCDCDAB_simplified.json,CoTenGra
+33.0,24.0,10.122673742,qc_circuit_n53_m12_s2_e8_pABCDCDAB_simplified.json,OMEinsum (KaHyPar)
+32.0,25.0,0.838917101,qc_circuit_n53_m12_s2_e8_pABCDCDAB_simplified.json,OMEinsum (METIS)
+34.0,32.0,135.314465794,wmc_2021_187.json,CoTenGra
+33.0,31.0,9.891751111,wmc_2021_187.json,OMEinsum (KaHyPar)
+34.0,32.0,0.40223154,wmc_2021_187.json,OMEinsum (METIS)
+29.0,26.0,102.996084698,qc_circuit_n49_m14_s9_e6_pEFGH_simplified.json,CoTenGra
+33.0,23.0,19.125552507,qc_circuit_n49_m14_s9_e6_pEFGH_simplified.json,OMEinsum (KaHyPar)
+31.0,25.0,0.92816123,qc_circuit_n49_m14_s9_e6_pEFGH_simplified.json,OMEinsum (METIS)
+32.0,30.0,105.139679927,mc_2021_074.json,CoTenGra
+36.0,34.0,3.409628925,mc_2021_074.json,OMEinsum (KaHyPar)
+36.0,34.0,2.839290675,mc_2021_074.json,OMEinsum (METIS)
+34.0,32.0,87.439282672,mc_2023_199.json,CoTenGra
+34.0,32.0,3.977853063,mc_2023_199.json,OMEinsum (KaHyPar)
+34.0,32.0,2.960870618,mc_2023_199.json,OMEinsum (METIS)
+35.61126857509341,30.3418079001002,157.653798527,str_ctg_lattice_01.json,CoTenGra
+40.03780171321011,31.668805364665957,10.49125266,str_ctg_lattice_01.json,OMEinsum (KaHyPar)
+41.108191041101506,30.35330353893802,0.841301366,str_ctg_lattice_01.json,OMEinsum (METIS)
+35.0,33.0,257.88121363,mc_rw_s510.bench.json,CoTenGra
+35.0,31.0,8.314628792,mc_rw_s510.bench.json,OMEinsum (KaHyPar)
+36.0,30.0,0.671076615,mc_rw_s510.bench.json,OMEinsum (METIS)
+32.0,28.0,86.564044264,qc_circuit_patch_n53_m16_s19_e28_pABCDCDAB_simplified.json,CoTenGra
+34.0,27.0,11.817317182,qc_circuit_patch_n53_m16_s19_e28_pABCDCDAB_simplified.json,OMEinsum (KaHyPar)
+33.0,27.0,1.023362741,qc_circuit_patch_n53_m16_s19_e28_pABCDCDAB_simplified.json,OMEinsum (METIS)
+28.0,25.0,93.844272146,qc_maxcut_n25_r4_p4.json,CoTenGra
+34.0,28.0,12.192939521,qc_maxcut_n25_r4_p4.json,OMEinsum (KaHyPar)
+33.0,25.0,1.031323859,qc_maxcut_n25_r4_p4.json,OMEinsum (METIS)
+34.36512897433482,31.142736552998368,126.821341831,rnd_mixed_05.json,CoTenGra
+36.95009147505597,31.62816338016861,4.298855678,rnd_mixed_05.json,OMEinsum (KaHyPar)
+37.475559288989004,32.054095520550746,0.332964575,rnd_mixed_05.json,OMEinsum (METIS)
+32.0,30.0,146.160763468,qc_rand_supremacy2d_4_4_100.json,CoTenGra
+35.0,30.0,21.495914013,qc_rand_supremacy2d_4_4_100.json,OMEinsum (KaHyPar)
+34.0,31.0,1.144642325,qc_rand_supremacy2d_4_4_100.json,OMEinsum (METIS)
+36.53952234772102,30.14720492494223,218.95854239,str_nw_peps_closed_325.json,CoTenGra
+39.7619147690575,29.369597346278674,14.38423171,str_nw_peps_closed_325.json,OMEinsum (KaHyPar)
+39.34147810354123,30.978908024156517,1.133827541,str_nw_peps_closed_325.json,OMEinsum (METIS)
+30.738593694822846,23.07681559705083,54.342368844,str_nw_peps_closed_333.json,CoTenGra
+30.998953966358314,23.56224242422107,13.702359451,str_nw_peps_closed_333.json,OMEinsum (KaHyPar)
+30.098489639909225,24.56224242422107,1.084806957,str_nw_peps_closed_333.json,OMEinsum (METIS)
+39.64548429043134,36.32355619554398,186.197267378,rnd_mixed_06.json,CoTenGra
+32.25349666421155,28.534452978042587,20.709468021,rnd_mixed_06.json,OMEinsum (KaHyPar)
+32.79748738387639,29.475559288989018,1.219749105,rnd_mixed_06.json,OMEinsum (METIS)
+29.0,26.0,60.813894856,qc_rand_google53_26_15.json,CoTenGra
+33.0,26.0,12.708079299,qc_rand_google53_26_15.json,OMEinsum (KaHyPar)
+33.0,26.0,0.990608916,qc_rand_google53_26_15.json,OMEinsum (METIS)
+36.92034413166192,28.75041913021961,194.581271976,rnd_mixed_08.json,CoTenGra
+29.446412943329506,26.884170519108437,19.66301566,rnd_mixed_08.json,OMEinsum (KaHyPar)
+29.446412943329506,26.884170519108437,1.141623196,rnd_mixed_08.json,OMEinsum (METIS)
+38.96098611615926,31.849954803770522,331.500827531,rnd_mixed_07.json,CoTenGra
+35.242272226549275,31.849954803770515,22.890296971,rnd_mixed_07.json,OMEinsum (KaHyPar)
+35.242272226549275,31.849954803770515,1.27086165,rnd_mixed_07.json,OMEinsum (METIS)
+37.0,34.0,635.259564707,mc_rw_s510_15_7.json,CoTenGra
+36.0,32.0,10.307397627,mc_rw_s510_15_7.json,OMEinsum (KaHyPar)
+37.0,32.0,0.776925638,mc_rw_s510_15_7.json,OMEinsum (METIS)
+38.0,36.0,244.544103312,mc_2022_arjun_037.json,CoTenGra
+38.0,36.0,0.106710618,mc_2022_arjun_037.json,OMEinsum (KaHyPar)
+38.0,36.0,0.107537446,mc_2022_arjun_037.json,OMEinsum (METIS)
+37.55237488603988,32.32355619554398,271.04478504,str_ctg_lattice_03.json,CoTenGra
+41.441343573651125,31.38244988459754,19.028829597,str_ctg_lattice_03.json,OMEinsum (KaHyPar)
+41.49348119698633,31.509775004326933,1.467714608,str_ctg_lattice_03.json,OMEinsum (METIS)
+38.0,34.0,630.259798915,mc_2022_arjun_069.json,CoTenGra
+39.0,35.0,38.765520768,mc_2022_arjun_069.json,OMEinsum (KaHyPar)
+39.0,33.0,2.064449793,mc_2022_arjun_069.json,OMEinsum (METIS)
+35.33700973159742,30.319087823600118,195.028886531,rnd_oe_03.json,CoTenGra
+39.34343600075682,30.459265481648366,10.619923488,rnd_oe_03.json,OMEinsum (KaHyPar)
+39.28454231170324,31.35972980809745,0.788479693,rnd_oe_03.json,OMEinsum (METIS)
+29.0,28.0,159.742064016,mc_2020_arjun_057.json,CoTenGra
+25.0,24.0,30.395603876,mc_2020_arjun_057.json,OMEinsum (KaHyPar)
+25.0,24.0,0.421898684,mc_2020_arjun_057.json,OMEinsum (METIS)
+34.0,29.000000000000004,257.444710663,mc_rw_blasted_case3.json,CoTenGra
+33.0,29.0,13.505411028,mc_rw_blasted_case3.json,OMEinsum (KaHyPar)
+33.0,29.0,0.843156038,mc_rw_blasted_case3.json,OMEinsum (METIS)
+40.0,28.0,509.481203485,mc_rw_sat-grid-pbl-0020.json,CoTenGra
+40.0,28.0,5.921799263,mc_rw_sat-grid-pbl-0020.json,OMEinsum (KaHyPar)
+40.0,30.0,0.415733436,mc_rw_sat-grid-pbl-0020.json,OMEinsum (METIS)
+36.0,31.000000000000004,143.178929626,qc_maxcut_n27_r6_p5.json,CoTenGra
+38.0,29.0,24.745787774,qc_maxcut_n27_r6_p5.json,OMEinsum (KaHyPar)
+37.0,29.0,2.298362567,qc_maxcut_n27_r6_p5.json,OMEinsum (METIS)
+31.0,27.0,89.032281891,qc_rand_google53_27_20.json,CoTenGra
+37.0,28.0,19.267429335,qc_rand_google53_27_20.json,OMEinsum (KaHyPar)
+35.0,27.0,1.568907758,qc_rand_google53_27_20.json,OMEinsum (METIS)
+28.0,27.0,218.287922805,mc_2020_arjun_046.json,CoTenGra
+25.0,24.0,97.285108573,mc_2020_arjun_046.json,OMEinsum (KaHyPar)
+25.0,24.0,1.759889462,mc_2020_arjun_046.json,OMEinsum (METIS)
+32.509775004326954,28.339850002884624,275.379753309,str_ctg_lattice_02.json,CoTenGra
+35.604512509375056,27.264662506490396,26.289925253,str_ctg_lattice_02.json,OMEinsum (KaHyPar)
+35.67970000576931,28.92481250360578,2.071650025,str_ctg_lattice_02.json,OMEinsum (METIS)
+33.95455984699983,31.147204924942233,115.033900193,rnd_mixed_09.json,CoTenGra
+33.46913301982959,30.661778097771986,10.920804135,rnd_mixed_09.json,OMEinsum (KaHyPar)
+33.95455984699983,31.14720492494223,0.326769209,rnd_mixed_09.json,OMEinsum (METIS)
+20.253127286998765,13.575066464578658,75.168775897,str_matrix_chain_multiplication_1000.json,CoTenGra
+17.931199192111386,13.931199192111405,19.464178577,str_matrix_chain_multiplication_1000.json,OMEinsum (KaHyPar)
+17.9311991921114,13.931199192111405,1.22111927,str_matrix_chain_multiplication_1000.json,OMEinsum (METIS)
+37.11428751370209,34.52932501298081,573.950794396,str_ctg_lattice_04.json,CoTenGra
+42.434587507932754,30.92481250360578,30.433579171,str_ctg_lattice_04.json,OMEinsum (KaHyPar)
+42.0195500086539,30.67970000576925,2.327126155,str_ctg_lattice_04.json,OMEinsum (METIS)
+26.0,24.0,149.726290142,qc_rand_supremacy2d_1_12_400.json,CoTenGra
+32.0,25.0,32.73353122,qc_rand_supremacy2d_1_12_400.json,OMEinsum (KaHyPar)
+32.0,24.0,1.840672585,qc_rand_supremacy2d_1_12_400.json,OMEinsum (METIS)
+33.56866869338056,29.246740598493147,411.938522347,rnd_mixed_11.json,CoTenGra
+33.92481250360579,28.001628100656603,28.295436525,rnd_mixed_11.json,OMEinsum (KaHyPar)
+33.41666559993548,28.92481250360578,1.739670055,rnd_mixed_11.json,OMEinsum (METIS)
+50.2893404802061,47.06052178971019,534.825219049,rnd_mixed_12.json,CoTenGra
+38.32355619554401,34.53445297804259,27.462813459,rnd_mixed_12.json,OMEinsum (KaHyPar)
+38.96741238531871,35.36452797660027,1.762673475,rnd_mixed_12.json,OMEinsum (METIS)
+43.64548429043134,41.32355619554397,543.138939133,rnd_mixed_10.json,CoTenGra
+32.38244988459755,28.38244988459754,34.307436165,rnd_mixed_10.json,OMEinsum (KaHyPar)
+32.001628100656646,27.38244988459754,2.14830117,rnd_mixed_10.json,OMEinsum (METIS)
+33.0,33.0,149.36807767,mc_2020_arjun_042.json,CoTenGra
+28.0,27.0,118.00297919,mc_2020_arjun_042.json,OMEinsum (KaHyPar)
+28.0,27.0,3.247355013,mc_2020_arjun_042.json,OMEinsum (METIS)
+38.0,34.0,857.30968218,gm_Promedas_33.json,CoTenGra
+41.0,33.0,18.25417903,gm_Promedas_33.json,OMEinsum (KaHyPar)
+43.0,37.0,1.382801514,gm_Promedas_33.json,OMEinsum (METIS)
+31.0,29.000000000000004,150.779217728,mc_2020_arjun_102.json,CoTenGra
+31.0,27.0,68.31193297,mc_2020_arjun_102.json,OMEinsum (KaHyPar)
+32.0,26.0,1.400080433,mc_2020_arjun_102.json,OMEinsum (METIS)
+38.0,34.0,1050.89170045,mc_2021_arjun_031.json,CoTenGra
+41.0,33.0,13.635560976,mc_2021_arjun_031.json,OMEinsum (KaHyPar)
+41.0,33.0,0.830935339,mc_2021_arjun_031.json,OMEinsum (METIS)
+33.0,30.0,159.176652438,mc_2020_arjun_061.json,CoTenGra
+31.0,30.0,132.293073634,mc_2020_arjun_061.json,OMEinsum (KaHyPar)
+31.0,30.0,5.516568861,mc_2020_arjun_061.json,OMEinsum (METIS)
+39.0,36.0,827.179094519,qc_maxcut_n29_r4_p10.json,CoTenGra
+42.0,31.0,37.785429564,qc_maxcut_n29_r4_p10.json,OMEinsum (KaHyPar)
+41.0,31.0,3.730122882,qc_maxcut_n29_r4_p10.json,OMEinsum (METIS)
+39.0,34.0,500.985281915,mc_rw_c1908.isc.json,CoTenGra
+39.0,34.0,83.713614272,mc_rw_c1908.isc.json,OMEinsum (KaHyPar)
+38.0,33.0,1.014997924,mc_rw_c1908.isc.json,OMEinsum (METIS)
+34.0,34.0,343.744674899,mc_2023_arjun_071.json,CoTenGra
+31.0,30.0,91.11343196,mc_2023_arjun_071.json,OMEinsum (KaHyPar)
+31.0,30.0,0.987312029,mc_2023_arjun_071.json,OMEinsum (METIS)
+34.33985000288462,30.754887502163466,264.303531106,rnd_oe_04.json,CoTenGra
+36.16992500144231,27.16992500144231,87.066046207,rnd_oe_04.json,OMEinsum (KaHyPar)
+37.169925001442316,27.169925001442312,4.907371183,rnd_oe_04.json,OMEinsum (METIS)
+31.0,27.0,200.25729856,mc_2021_arjun_171.json,CoTenGra
+30.0,26.0,176.163301087,mc_2021_arjun_171.json,OMEinsum (KaHyPar)
+30.0,26.0,7.526430142,mc_2021_arjun_171.json,OMEinsum (METIS)
+36.0,32.0,549.937656483,mc_2020_arjun_115.json,CoTenGra
+30.0,29.0,85.803332573,mc_2020_arjun_115.json,OMEinsum (KaHyPar)
+30.0,29.0,2.13136929,mc_2020_arjun_115.json,OMEinsum (METIS)
+27.0,24.0,201.484039368,qc_circuits-8.json,CoTenGra
+25.0,20.0,24.125403671,qc_circuits-8.json,OMEinsum (KaHyPar)
+25.0,20.0,1.155300688,qc_circuits-8.json,OMEinsum (METIS)
+42.0,35.0,1216.12280212,mc_2021_arjun_007.json,CoTenGra
+43.0,33.0,18.451894764,mc_2021_arjun_007.json,OMEinsum (KaHyPar)
+42.0,36.0,1.02504877,mc_2021_arjun_007.json,OMEinsum (METIS)
+32.0,30.0,253.838618474,mc_2021_arjun_179.json,CoTenGra
+32.0,27.0,120.160862015,mc_2021_arjun_179.json,OMEinsum (KaHyPar)
+32.0,27.0,5.283365989,mc_2021_arjun_179.json,OMEinsum (METIS)
+34.0,31.000000000000004,409.165108726,qc_circuits-42.json,CoTenGra
+35.0,27.0,47.204109623,qc_circuits-42.json,OMEinsum (KaHyPar)
+33.0,28.0,3.878998801,qc_circuits-42.json,OMEinsum (METIS)
+35.0,30.0,307.205951702,qc_circuits-7.json,CoTenGra
+35.0,27.0,18.646049252,qc_circuits-7.json,OMEinsum (KaHyPar)
+33.0,28.0,1.526571711,qc_circuits-7.json,OMEinsum (METIS)
+35.0,31.000000000000004,535.500924575,mc_rw_blockmap_05_01.net.json,CoTenGra
+33.0,28.0,75.65577228,mc_rw_blockmap_05_01.net.json,OMEinsum (KaHyPar)
+33.0,28.0,3.344518433,mc_rw_blockmap_05_01.net.json,OMEinsum (METIS)
+32.0,31.000000000000004,431.238907695,mc_2022_025.json,CoTenGra
+26.0,25.0,113.751966865,mc_2022_025.json,OMEinsum (KaHyPar)
+27.0,26.0,6.91246597,mc_2022_025.json,OMEinsum (METIS)
+31.0,27.0,345.412397351,qc_rand_google53_25_50.json,CoTenGra
+35.0,28.0,44.478785011,qc_rand_google53_25_50.json,OMEinsum (KaHyPar)
+34.0,25.0,3.59488136,qc_rand_google53_25_50.json,OMEinsum (METIS)
+35.0,32.0,479.775871297,mc_2022_029.json,CoTenGra
+28.0,26.0,72.452263227,mc_2022_029.json,OMEinsum (KaHyPar)
+29.0,26.0,1.339420769,mc_2022_029.json,OMEinsum (METIS)
+36.0,32.0,610.693068086,qc_circuit_n47_m14_s0_e0_pEFGH.json,CoTenGra
+38.0,30.0,36.538491015,qc_circuit_n47_m14_s0_e0_pEFGH.json,OMEinsum (KaHyPar)
+38.0,32.0,1.888296311,qc_circuit_n47_m14_s0_e0_pEFGH.json,OMEinsum (METIS)
+32.0,26.0,190.449161188,qc_circuits-1.json,CoTenGra
+28.0,21.0,19.74001348,qc_circuits-1.json,OMEinsum (KaHyPar)
+29.0,23.0,1.581126174,qc_circuits-1.json,OMEinsum (METIS)
+37.0,35.0,2097.594075939,mc_rw_log-1.json,CoTenGra
+39.0,34.0,304.84991903,mc_rw_log-1.json,OMEinsum (KaHyPar)
+38.0,34.0,10.802298961,mc_rw_log-1.json,OMEinsum (METIS)
+35.0,29.000000000000004,485.371015979,qc_circuits-35.json,CoTenGra
+32.0,23.0,23.216472081,qc_circuits-35.json,OMEinsum (KaHyPar)
+30.0,24.0,1.874116563,qc_circuits-35.json,OMEinsum (METIS)
+38.0,34.0,921.60635355,qc_circuits-18.json,CoTenGra
+41.0,32.0,24.660027209,qc_circuits-18.json,OMEinsum (KaHyPar)
+38.0,31.0,2.070066024,qc_circuits-18.json,OMEinsum (METIS)
+31.0,32.0,734.513801289,wmc_2022_038.json,CoTenGra
+27.0,26.0,118.77800488,wmc_2022_038.json,OMEinsum (KaHyPar)
+28.0,27.0,10.595507074,wmc_2022_038.json,OMEinsum (METIS)
+32.0,29.000000000000004,277.181103086,qc_circuit_patch_n53_m16_s10_e28_pABCDCDAB.json,CoTenGra
+34.0,27.0,26.698682039,qc_circuit_patch_n53_m16_s10_e28_pABCDCDAB.json,OMEinsum (KaHyPar)
+34.0,28.0,2.16023947,qc_circuit_patch_n53_m16_s10_e28_pABCDCDAB.json,OMEinsum (METIS)
+25.763199523274942,21.515272009831353,190.571483867,str_mps_varying_inner_product_2000.json,CoTenGra
+17.697978850717703,13.450051337274045,42.524066519,str_mps_varying_inner_product_2000.json,OMEinsum (KaHyPar)
+17.697978850717703,13.450051337274045,3.855322317,str_mps_varying_inner_product_2000.json,OMEinsum (METIS)
+40.0,34.0,2496.813916877,mc_rw_blasted_TR_b14_1_linear.json,CoTenGra
+37.0,33.0,53.489230188,mc_rw_blasted_TR_b14_1_linear.json,OMEinsum (KaHyPar)
+37.0,32.0,3.704949591,mc_rw_blasted_TR_b14_1_linear.json,OMEinsum (METIS)
+20.0,19.0,267.954633316,mc_2022_079.json,CoTenGra
+14.0,12.0,152.041480242,mc_2022_079.json,OMEinsum (KaHyPar)
+15.0,13.0,1.933661684,mc_2022_079.json,OMEinsum (METIS)
+37.0,27.0,710.505702996,mc_rw_blasted_case1_b14_even3.json,CoTenGra
+31.0,24.0,180.581807408,mc_rw_blasted_case1_b14_even3.json,OMEinsum (KaHyPar)
+31.0,24.0,3.72675781,mc_rw_blasted_case1_b14_even3.json,OMEinsum (METIS)
+38.0,30.0,568.809817315,mc_2023_arjun_133.json,CoTenGra
+38.0,30.0,43.440707632,mc_2023_arjun_133.json,OMEinsum (KaHyPar)
+38.0,30.0,2.70203618,mc_2023_arjun_133.json,OMEinsum (METIS)
+32.0,28.0,491.080577259,qc_circuits-2.json,CoTenGra
+35.0,30.0,36.11147538,qc_circuits-2.json,OMEinsum (KaHyPar)
+35.0,27.0,2.904600455,qc_circuits-2.json,OMEinsum (METIS)
+35.0,29.000000000000004,798.725577934,qc_rand_supremacy2d_7_2_800.json,CoTenGra
+31.0,24.0,606.175946347,qc_rand_supremacy2d_7_2_800.json,OMEinsum (KaHyPar)
+31.0,24.0,13.079197524,qc_rand_supremacy2d_7_2_800.json,OMEinsum (METIS)
+36.0,28.0,450.399391099,qc_circuit_n53_m20_s5_e22_pABCDCDAB.json,CoTenGra
+35.0,28.0,168.469887451,qc_circuit_n53_m20_s5_e22_pABCDCDAB.json,OMEinsum (KaHyPar)
+36.0,27.0,13.495351556,qc_circuit_n53_m20_s5_e22_pABCDCDAB.json,OMEinsum (METIS)
+33.0,30.0,568.857509868,qc_circuits-14.json,CoTenGra
+35.0,28.0,38.825199479,qc_circuits-14.json,OMEinsum (KaHyPar)
+36.0,27.0,3.180296284,qc_circuits-14.json,OMEinsum (METIS)
+17.0,13.0,457.629916986,wmc_2021_130.json,CoTenGra
+16.0,12.0,104.596212926,wmc_2021_130.json,OMEinsum (KaHyPar)
+16.0,12.0,2.562065512,wmc_2021_130.json,OMEinsum (METIS)
+38.0,32.0,1186.160046248,mc_2022_085.json,CoTenGra
+37.0,31.0,204.28259049,mc_2022_085.json,OMEinsum (KaHyPar)
+37.0,32.0,10.959167647,mc_2022_085.json,OMEinsum (METIS)
+38.0,34.0,1359.929814943,mc_2020_175.json,CoTenGra
+40.0,32.0,83.504511644,mc_2020_175.json,OMEinsum (KaHyPar)
+41.0,37.0,10.792275622,mc_2020_175.json,OMEinsum (METIS)
+41.0,33.0,3892.91589441,mc_rw_blasted_squaring12.json,CoTenGra
+41.0,33.0,104.518350688,mc_rw_blasted_squaring12.json,OMEinsum (KaHyPar)
+41.0,35.0,4.94809859,mc_rw_blasted_squaring12.json,OMEinsum (METIS)
+37.0,34.0,2212.366840959,gm_mastermind_03_08_05-0000.json,CoTenGra
+35.0,31.0,110.918033028,gm_mastermind_03_08_05-0000.json,OMEinsum (KaHyPar)
+37.0,32.0,7.597612092,gm_mastermind_03_08_05-0000.json,OMEinsum (METIS)
+27.0,24.0,1944.883014901,qc_maxcut_n24_r20_p10.json,CoTenGra
+40.0,30.0,99.485494024,qc_maxcut_n24_r20_p10.json,OMEinsum (KaHyPar)
+39.0,30.0,12.622616415,qc_maxcut_n24_r20_p10.json,OMEinsum (METIS)
+37.0,26.0,713.007517719,wmc_2022_060.json,CoTenGra
+36.0,27.0,258.277924948,wmc_2022_060.json,OMEinsum (KaHyPar)
+35.0,27.0,21.556456659,wmc_2022_060.json,OMEinsum (METIS)
