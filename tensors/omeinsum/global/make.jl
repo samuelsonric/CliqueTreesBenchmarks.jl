@@ -31,6 +31,14 @@ const PAIRS = (
 )
 
 function run()
+    printrow(
+        "circuit",
+        "algorithm",
+        "time complexity",
+        "space complexity",
+        "running time",
+    )
+
     if endswith(FILE, ".json") && FILE in readdir(DIR)
         query, matrix, weights = TensorBenchmarks.read(joinpath(abspath(DIR), FILE))
 
@@ -60,6 +68,14 @@ function run()
             end
 
             write(joinpath("results", FILE), JSON.json(dict))
+
+            printrow(
+                file,
+                label,
+                tc,
+                sc,
+                time,
+            )
         end
     end
 
