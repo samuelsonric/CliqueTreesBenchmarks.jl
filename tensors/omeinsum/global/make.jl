@@ -65,17 +65,17 @@ function run()
                     "sc" => sc,
                     "time" => time,
                 )
+
+		printrow(
+		    FILE,
+		    label,
+		    tc,
+		    sc,
+		    time,
+		)
             end
 
             write(joinpath("results", FILE), JSON.json(dict))
-
-            printrow(
-                file,
-                label,
-                tc,
-                sc,
-                time,
-            )
         end
     end
 
