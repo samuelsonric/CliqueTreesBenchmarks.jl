@@ -57,7 +57,8 @@ function run()
                 
                     optimizer = f()
                     time = @elapsed solve(network, optimizer)
-                catch
+                catch e
+		    println(e)
                 end
 
                 dict[label] = Dict(
