@@ -14,8 +14,6 @@ using .TensorBenchmarks
 
 const DIR = joinpath("..", "..", "instances")
 
-const FILE = first(ARGS)
-
 const CTG = pyimport("cotengra")
 
 const LABELS = (
@@ -39,48 +37,60 @@ function run()
         "running time",
     )
 
-    if endswith(FILE, ".json") && FILE in readdir(DIR)
-        query, matrix, weights = TensorBenchmarks.read(joinpath(abspath(DIR), FILE))
-
-        if all(weights .>= 2)
-            dict = Dict{String, Dict{String, Float64}}()
-
-            for (label, (T, f)) in zip(LABELS, PAIRS)            
-                network = make(T, query, matrix, weights)
-                tc = sc = time = typemax(Float64)
-
-                try
-                    optimizer = f()
-                    result = solve(network, optimizer)
-                    tc = timecomplexity(result)
-                    sc = spacecomplexity(result)
-                
-                    optimizer = f()
-                    time = @elapsed solve(network, optimizer)
-                catch e
-		    println(e)
-                end
-
-                dict[label] = Dict(
-                    "tc" => tc,
-                    "sc" => sc,
-                    "time" => time,
-                )
-
-		printrow(
-		    FILE,
-		    label,
-		    tc,
-		    sc,
-		    time,
-		)
-            end
-
-            write(joinpath("results", FILE), JSON.json(dict))
+    for file in ARGS
+        if endswith(file, ".json") && file in readdir(DIR)
+            run(file)
         end
     end
 
     return
+end
+
+function run(file)
+    query, matrix, weights = TensorBenchmarks.read(joinpath(abspath(DIR), file))
+
+    if all(weights .>= 2)
+        dict = Dict{String, Dict{String, Float64}}()
+
+        for (label, (T, f)) in zip(LABELS, PAIRS)            
+            tc, sc, time = runalg(T, f, query, matrix, weights)
+            tc, sc, time = runalg(T, f, query, matrix, weights) 
+
+            dict[label] = Dict(
+                "tc" => tc,
+                "sc" => sc,
+                "time" => time,
+            )
+
+            printrow(
+                file,
+                label,
+                tc,
+                sc,
+                time,
+            )
+        end
+
+        write(joinpath("results", file), JSON.json(dict))
+    end
+
+    return
+end
+
+function runalg(T, f, query, matrix, weights)
+    network = make(T, query, matrix, weights)
+    optimizer = f()
+    tc = sc = time = typemax(Float64)
+
+    try
+        time = @elapsed result = solve(network, optimizer)
+        tc = timecomplexity(result)
+        sc = spacecomplexity(result)
+    catch e
+        println(e)
+    end
+
+    return tc, sc, time
 end
 
 run()
